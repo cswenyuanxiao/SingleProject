@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "navbar.html" . }}
+
+    <canvas id="peerReviewChart"
+        width="400" height="200"
+        data-labels='{{ .Params.chart.labels | jsonify }}'
+        data-coding='{{ .Params.chart.coding | jsonify }}'
+        data-essay='{{ .Params.chart.essay | jsonify }}'>
+</canvas>
+
+    <div class="container my-4">
+      {{ .Content }}
+    </div>
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/chart-init.js"></script>

@@ -1,6 +1,6 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'Peer Review Research Hub'
+title = 'Home'
 theme = 'hugo-bootstrap-theme'
 themesdir = 'node_modules/@filipecarneiro'
 
@@ -10,14 +10,22 @@ description = "Interactive analysis of peer review effectiveness in computing sc
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
+    name = "Comparison"
+    url = "/comparison/"
     weight = 1
   [[menu.main]]
-    name = "Comparison"
-    url = "/comparison"
-    weight = 2
-  [[menu.main]]
     name = "Suggestions"
-    url = "/suggestions"
-    weight = 3
+    url = "/suggestions/"
+    weight = 2
+ 
+ [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow original HTML
+
+  [security]
+  [security.csp]
+    script-src = ["'self'", "https://cdn.jsdelivr.net"]
+
+ 
+ 

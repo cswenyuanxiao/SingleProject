@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <!-- Banner -->
+  <div class="jumbotron text-white text-center p-5 mb-4" style="background: linear-gradient(135deg, #2c3e50, #3498db); border-radius: 15px;">
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <div class="container mt-4">
+    <!-- 显示 description -->
+    {{ with .Description }}
+      <p class="lead text-center"><strong>Description:</strong> {{ . }}</p>
+    {{ end }}
+
+    <hr>
+
+    <div class="col-md-8">
+        {{ .Content }}
+    </div>
+  </div>
+{{ end }}

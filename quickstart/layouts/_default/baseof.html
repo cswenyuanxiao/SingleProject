@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}  <!-- 这里引入 head.html -->
+  </head>
+  <body>
+    {{ partial "navbar.html" . }}  <!-- 这里引入导航 -->
+
+    <main class="container my-4">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
