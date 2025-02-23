@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {{ partial "head.html" . }}  <!-- 这里引入 head.html -->
+    {{ partial "head.html" . }}  <!-- Import head.html -->
   </head>
   <body>
-    {{ partial "navbar.html" . }}  <!-- 这里引入导航 -->
+    {{ partial "navbar.html" . }}  <!-- Import Navibar here -->
 
     <main class="container my-4">
       {{ block "main" . }}{{ end }}

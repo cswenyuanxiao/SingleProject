@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "navbar.html" . }}
+
+    <main class="container my-4">
+      <h1>{{ .Title }}</h1>
+
+      <!-- 这里是折线图的 Canvas -->
+      <canvas id="peerReviewChart"
+              width="400" height="200"
+              data-labels='{{ .Params.chart.labels | jsonify }}'
+              data-ai='{{ .Params.chart.ai | jsonify }}'
+              data-human='{{ .Params.chart.human | jsonify }}'>
+      </canvas>
+
+      <!-- 这里输出正文 .Content -->
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    <!-- 引入 chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- 引入你的 chart-init.js（或者新写一个专门画折线图的，比如 chart-init-line.js） -->
+    <script src="/js/chart-init-line.js"></script>
+
+  </body>
+</html>

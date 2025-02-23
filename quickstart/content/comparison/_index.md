@@ -7,7 +7,7 @@ date: 2025-02-16
 ## Peer Review Data Comparisons
 Explore insights between:
 
-<!-- 渲染后的HTML片段 -->
+<!-- Rendered HTML snippet -->
 <div class="list-group">
   <a href="/comparison/coding-vs-essay/" class="list-group-item">
     <strong>Coding vs. Essay-based Reviews</strong>
@@ -16,4 +16,7 @@ Explore insights between:
     <strong>AI vs. Human Scoring</strong>
   </a>
 </div>
+
+Want to propose a new suggestion? [Click here to submit](/suggestions/submit/)
+
 

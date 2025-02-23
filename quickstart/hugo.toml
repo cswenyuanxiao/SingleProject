@@ -5,8 +5,10 @@ theme = 'hugo-bootstrap-theme'
 themesdir = 'node_modules/@filipecarneiro'
 
 
+
 [params]
 description = "Interactive analysis of peer review effectiveness in computing science courses"
+disqusShortname = "project-bnl3amf11h"  
 
 [menu]
   [[menu.main]]

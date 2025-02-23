@@ -2,8 +2,9 @@
 title: "AI vs Human Reviews"
 description: "Comparing peer review effectiveness between AI and Human."
 date: 2025-02-16
+layout: "linechart"
 chart:
-  labels: ["Assignment 1", "Assignment 2", "Assignment 3", "Assignment 4", "Assignment 5"]
-  coding: [85, 90, 78, 88, 92]
-  essay: [75, 80, 82, 79, 85]
+  labels: ["Test 1", "Test 2", "Test 3", "Test 4"]
+  ai: [70, 75, 72, 70]
+  human: [76, 82, 84, 85]
 ---
