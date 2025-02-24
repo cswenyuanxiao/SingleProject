@@ -10,20 +10,21 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
 
-    <!-- 添加 Chart.js 画布 -->
+    <!-- add Chart.js canvas -->
+    {{ $chartData := index site.Data.charts .Params.chart }}
     <canvas id="peerReviewChart"
         width="400" height="200"
-        data-labels='{{ .Params.chart.labels | jsonify }}'
-        data-coding='{{ .Params.chart.coding | jsonify }}'
-        data-essay='{{ .Params.chart.essay | jsonify }}'>
+        data-labels='{{ $chartData.chart.labels | jsonify }}'
+        data-coding='{{ $chartData.chart.coding | jsonify }}'
+        data-essay='{{ $chartData.chart.essay | jsonify }}'>
     </canvas>
 
-    <!-- 显示正文内容 -->
+    <!-- Display main content -->
     <div class="content">
       {{ .Content }}
     </div>
 
-    <!-- Disqus 评论区 -->
+    <!-- Disqus comment block -->
     {{ with .Site.Params.disqusShortname }}
       <div id="disqus_thread"></div>
       <script>

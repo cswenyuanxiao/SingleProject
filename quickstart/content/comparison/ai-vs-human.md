@@ -1,7 +1,7 @@
 ---
 title: "AI vs Human Reviews"
 description: "Comparing peer review effectiveness between AI and Human."
-date: 2025-02-16
+date: "2025-02-16"
 layout: "linechart"
 chart:
   labels: ["Test 1", "Test 2", "Test 3", "Test 4"]
