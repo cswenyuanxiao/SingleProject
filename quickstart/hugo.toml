@@ -10,15 +10,31 @@ themesdir = 'node_modules/@filipecarneiro'
 description = "Interactive analysis of peer review effectiveness in computing science courses"
 disqusShortname = "project-bnl3amf11h"  
 
-[menu]
   [[menu.main]]
     name = "Comparison"
     url = "/comparison/"
     weight = 1
+
   [[menu.main]]
     name = "Suggestions"
     url = "/suggestions/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Factors"
+    url = "/factors/"
     weight = 2
+
+  [[menu.main]]
+    name = "Feedback"
+    url = "/feedback/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 5
+
  
  [markup]
   [markup.goldmark]
@@ -28,6 +44,10 @@ disqusShortname = "project-bnl3amf11h"
   [security]
   [security.csp]
     script-src = ["'self'", "https://cdn.jsdelivr.net"]
+
+  [outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 
  
  

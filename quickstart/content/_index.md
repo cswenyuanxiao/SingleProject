@@ -26,7 +26,7 @@ Explore the **[Comparison](/comparison/)** page for interactive charts and data 
 
 
 
-以下是仿照GitHub README风格设计的**项目主页内容模板**，整合技术细节与研究方法的透明化呈现：
+Readme-style Template
 
 ---
 
@@ -77,31 +77,31 @@ D3 --> E
 ### Core Architecture  
 ```bash  
 .
-├── content/               # 研究内容 (Markdown/YAML)
-├── data/                  # 清洗后数据集
+├── content/               
+├── data/                  
 │   ├── coding_reviews.csv  
 │   └── essay_feedback.parquet  
-├── layouts/               # Hugo模板
-│   ├── comparison/        # 交互式图表
-│   └── shortcodes/        # 自定义组件  
-├── static/                # 前端资源
-│   ├── js/chart-init.js   # 可视化逻辑  
-│   └── css/custom.scss    # Bootstrap扩展  
-└── config/                # 分析脚本  
-    ├── R/                 # 统计模型  
-    └── python/            # NLP处理  
+├── layouts/               
+│   ├── comparison/        
+│   └── shortcodes/         
+├── static/                
+│   ├── js/chart-init.js    
+│   └── css/custom.scss     
+└── config/                 
+    ├── R/                 
+    └── python/            
 ```
 
 ### Dependencies  
 ```toml  
-# hugo.toml 技术依赖  
+# hugo.toml 
 [module]  
 [[module.imports]]  
 path = "github.com/wowchemy/wowchemy-hugo-modules/netlify"  
 [[module.imports]]  
-path = "github.com/peaceiris/hugo-mod-utterances"  # 评论系统  
+path = "github.com/peaceiris/hugo-mod-utterances"   
 
-# 数据分析环境 (requirements.txt)  
+# (requirements.txt)  
 numpy==1.26.0  
 pandas==2.1.0  
 scikit-learn==1.3.0  
@@ -122,8 +122,7 @@ tensorflow==2.15.0
    - Unstructured: Feedback text + AI grading logs  
 
 ### Processing Workflow  
-```python  
-# 示例数据清洗代码  
+```python    
 def preprocess_reviews(df):  
     df = df.dropna(subset=['feedback'])  
     df['sentiment'] = df['feedback'].apply(vader_analyzer)  
@@ -151,16 +150,11 @@ def preprocess_reviews(df):
 
 ### As a Developer  
 ```bash  
-# 克隆仓库 & 本地运行  
+ 
 git clone https://github.com/yourname/peer-review-research.git  
 cd peer-review-research  
 hugo server -D --disableFastRender  
 
-# 贡献流程  
-1. Fork 项目  
-2. 创建 feature branch  
-3. 提交 PR 并关联 issues  
-```
 
 ---
 
@@ -189,15 +183,8 @@ hugo server -D --disableFastRender
 
 ## 📧 Contact  
 For collaboration inquiries or data access:  
-- 📧 Email: [research@youruni.edu](mailto:research@youruni.edu)  
-- 💬 Discussion: [GitHub Issues](https://github.com/your-repo/issues)  
+- 📧 Email: [2715237x@student.gla.ac.uk]
+- 💬 Discussion: [GitHub Issues](https://github.com/cswenyuanxiao/SingleProject/issues)  
 
 ---
 
-**设计优势**：  
-1. **透明性**：完整展示技术细节与方法论  
-2. **可复现**：提供数据和代码引用规范  
-3. **协作友好**：明确参与路径  
-4. **版本控制**：通过badges展示依赖状态  
-
-可根据实际研究进展更新各模块内容，保持动态迭代。
