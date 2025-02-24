@@ -7,7 +7,7 @@
     <main class="container my-4">
       <h1>{{ .Title }}</h1>
 
-      <!-- 这里是折线图的 Canvas -->
+      <!--  Canvas of linechart -->
       <canvas id="peerReviewChart"
               width="400" height="200"
               data-labels='{{ .Params.chart.labels | jsonify }}'
@@ -15,7 +15,7 @@
               data-human='{{ .Params.chart.human | jsonify }}'>
       </canvas>
 
-      <!-- 这里输出正文 .Content -->
+      <!-- .Content -->
       <div class="content">
         {{ .Content }}
       </div>
@@ -23,10 +23,10 @@
 
     {{ partial "footer.html" . }}
 
-    <!-- 引入 chart.js -->
+    <!-- Import chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- 引入你的 chart-init.js（或者新写一个专门画折线图的，比如 chart-init-line.js） -->
+    <!-- Import chart-init.js（Or write a new one that specialises in drawing line graphs, like chart-init-line.js） -->
     <script src="/js/chart-init-line.js"></script>
 
   </body>

@@ -3,24 +3,27 @@
   <h1 class="text-center">{{ .Title }}</h1>
   <p class="text-center">{{ .Description }}</p>
 
-  <div class="my-4">
-    <a class="btn btn-primary" href="/suggestions/submit/">Submit a New Suggestion</a>
+  <!-- 确保“Submit a New Suggestion”按钮只出现一次 -->
+  <div class="text-center my-4">
+    <a class="btn btn-primary btn-lg" href="/suggestions/submit/">Submit a New Suggestion</a>
   </div>
 
   <div class="row">
     {{ range .Pages }}
+    {{ if ne .Title "Submit a New Suggestion" }} <!-- 避免表单变成 suggestion -->
     <div class="col-md-6 mb-4">
       <div class="card shadow-sm">
         <div class="card-body">
           <h5 class="card-title">
             <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
           </h5>
-          <p class="card-text">
-            <small class="text-muted">{{ .Date.Format "January 2, 2006" }}</small>
-          </p>
+          <p class="card-text"><small class="text-muted">{{ .Date.Format "January 2, 2006" }}</small></p>
+          <p class="card-text">{{ .Summary }}</p>
+          <a href="{{ .RelPermalink }}" class="btn btn-outline-primary">Read More</a>
         </div>
       </div>
     </div>
+    {{ end }}
     {{ end }}
   </div>
 </div>

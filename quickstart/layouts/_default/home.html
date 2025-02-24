@@ -1,27 +1,28 @@
 {{ define "main" }}
 <div class="container text-center mt-5">
-    <h1 class="display-4">{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
     <p class="lead">{{ .Description }}</p>
 
     <div class="row mt-4">
         <div class="col-md-6">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h3 class="card-title">Comparison</h3>
-                    <p class="card-text">Explore AI vs. human grading, coding vs. essay-based grading.</p>
-                    <a href="/comparison/" class="btn btn-primary mt-auto">Explore</a>
-                </div>
+            <div class="card shadow-sm p-4">
+                <h3><a href="/comparison/">Comparison</a></h3>
+                <p>Explore AI vs. human grading, coding vs. essay-based grading.</p>
+                <a href="/comparison/" class="btn btn-primary">Explore</a>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <h3 class="card-title">Suggestions</h3>
-                    <p class="card-text">Submit your recommendations for improving peer review.</p>
-                    <a href="/suggestions/" class="btn btn-success mt-auto">Submit</a>
-                </div>
+            <div class="card shadow-sm p-4">
+                <h3><a href="/suggestions/">Suggestions</a></h3>
+                <p>Submit your recommendations for improving peer review.</p>
+                <a href="/suggestions/" class="btn btn-success">Submit</a>
             </div>
         </div>
+    </div>
+
+    <!-- 这里插入 _index.md 的内容 -->
+    <div class="mt-5 text-left">
+        {{ .Content }}
     </div>
 </div>
 {{ end }}
