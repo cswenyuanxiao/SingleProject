@@ -19,6 +19,9 @@
       <div class="content">
         {{ .Content }}
       </div>
+
+      <!-- Add comments section -->
+        {{ partial "comments.html" . }}
     </main>
 
     {{ partial "footer.html" . }}
