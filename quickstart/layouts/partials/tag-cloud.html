@@ -1,0 +1,20 @@
+{{ with .Site.Taxonomies.tags }}
+<div class="card shadow-sm mb-4">
+  <div class="card-header">
+    <h4 class="mb-0">Topics</h4>
+  </div>
+  <div class="card-body">
+    <div class="tag-cloud">
+      {{ range $name, $taxonomy := . }}
+        {{ $count := $taxonomy.Count }}
+        {{ $size := (add 0.8 (mul 0.1 (math.Log $count))) }}
+        <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" 
+           class="tag-item text-decoration-none"
+           style="font-size: {{ $size }}rem;">
+          {{ $name }} <span class="badge bg-light text-dark">{{ $count }}</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

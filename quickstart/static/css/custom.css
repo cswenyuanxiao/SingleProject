@@ -18,3 +18,26 @@
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
+
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag-item {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .tag-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Additional styles for breadcrumbs */
+  .breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }

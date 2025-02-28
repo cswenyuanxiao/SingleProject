@@ -4,6 +4,7 @@ description: "Comparing peer review effectiveness between coding and essay-based
 date: 2025-02-16
 layout: code-vs-essay
 chart: coding-vs-essay # 引用数据文件名称
+tags: ["education", "assessment", "feedback", "methodology"]
 ---
 
 ## Key Findings

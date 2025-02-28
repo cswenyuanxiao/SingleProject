@@ -1,10 +1,4 @@
 ---
 title: "Search"
-description: "Find what you need."
+description: "Search through all content"
 ---
-
-<div class="container my-4">
-  <h1>Search Results</h1>
-  <div id="search-results">
-  </div>
-</div>

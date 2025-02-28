@@ -1,0 +1,23 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-2 rounded">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      {{ if ne .Type "page" }}
+        <!-- Section link (if not home) -->
+        <li class="breadcrumb-item">
+          <a href="{{ "/" | relLangURL }}{{ .Section | urlize }}">{{ .Section | humanize }}</a>
+        </li>
+      {{ end }}
+      
+      <!-- For taxonomy pages (tags, categories, etc.) -->
+      {{ if and (.Data) (.Data.Singular) (.Data.Term) }}
+        <li class="breadcrumb-item active">
+          {{ .Data.Singular | humanize }}: {{ .Data.Term | humanize }}
+        </li>
+      
+      <!-- For regular content pages (not home) -->
+      {{ else if and (ne .Kind "home") (ne .Kind "section") }}
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      {{ end }}
+    </ol>
+  </nav>

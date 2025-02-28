@@ -4,17 +4,20 @@
 <script src="/js/search.js"></script>
 
   <head>
-    {{ partial "head.html" . }}  <!-- Import head.html -->
+    {{ partial "head.html" . }}
   </head>
   <body>
-    {{ partial "navbar.html" . }}  <!-- Import Navibar here -->
+    {{ partial "navbar.html" . }}
 
     <main class="container my-4">
+      <!-- Add breadcrumbs, but don't show on homepage -->
+      {{ if ne .Kind "home" }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      
       {{ block "main" . }}{{ end }}
     </main>
 
     {{ partial "footer.html" . }}
   </body>
 </html>
-
-
