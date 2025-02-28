@@ -1,0 +1,21 @@
+<!-- layouts/comparison/stacked-bar.html -->
+{{ define "main" }}
+<div class="container my-4">
+  <h1>{{ .Title }}</h1>
+  
+  <div class="chart-container">
+    <canvas id="stackedBarChart"
+            data-labels='{{ .Params.chart.labels | jsonify }}'
+            data-datasets='{{ .Params.chart.datasets | jsonify }}'>
+    </canvas>
+  </div>
+  
+  <div class="content mt-4">
+    {{ .Content }}
+  </div>
+</div>
+
+<!-- Load chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/stacked-bar-chart.js"></script>
+{{ end }}

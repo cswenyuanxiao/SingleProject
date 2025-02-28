@@ -3,7 +3,7 @@ title: "Coding vs. Essay-based Reviews"
 description: "Comparing peer review effectiveness between coding and essay-based assessments."
 date: 2025-02-16
 layout: code-vs-essay
-chart: coding-vs-essay # 引用数据文件名称
+chart: coding-vs-essay 
 tags: ["education", "assessment", "feedback", "methodology"]
 ---
 

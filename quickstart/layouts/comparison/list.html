@@ -11,9 +11,23 @@
     {{ end }}
 
     <hr>
+    
+    <h2>Peer Review Data Comparisons</h2>
+    <p>Explore insights between:</p>
 
-    <div class="col-md-8">
-        {{ .Content }}
+    <div class="list-group">
+      {{ range where .Pages "Kind" "page" }}
+        <a href="{{ .RelPermalink }}" class="list-group-item">
+          <strong>{{ .Title }}</strong>
+          {{ if .Description }}
+            <p class="mb-1 small text-muted">{{ .Description }}</p>
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
+
+    <div class="mt-4">
+      {{ .Content }}
     </div>
   </div>
 {{ end }}
