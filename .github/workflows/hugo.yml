@@ -2,10 +2,10 @@
 name: Deploy Hugo site to Pages
 
 on:
-  # 仅在手动触发时运行，避免每次提交都失败
+  # 恢复自动部署功能
+  push:
+    branches: ["main"]
   workflow_dispatch:
-  # push:
-  #   branches: ["main"]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -34,27 +34,31 @@ jobs:
           hugo-version: '0.115.4'
           extended: true
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
       - name: Build with Hugo
         run: |
           cd quickstart
           npm ci
-          hugo --minify
-        
-      - name: Upload artifact
-        run: |
-          # 使用内置命令而不是actions
-          cd quickstart/public
-          zip -r $RUNNER_TEMP/artifact.zip .
-          echo "::set-output name=artifact-path::$RUNNER_TEMP/artifact.zip"
+          # 使用固定的正确 baseURL，不再使用动态变量
+          hugo --minify --baseURL "https://cswenyuanxiao.github.io/SingleProject/"
+      
+      # 使用更简单的方式上传构建产物
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./quickstart/public
 
-  # Deployment job - 临时注释掉，先让构建成功
-  # deploy:
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   runs-on: ubuntu-latest
-  #   needs: build
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v2 
+  # 恢复部署作业
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 
