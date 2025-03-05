@@ -8,7 +8,7 @@ layout: "home"
 Peer Review Research Hub is an interactive platform that explores the **effectiveness of peer reviews** across different types of courses and assessment formats. 
 
 ## Project Background & Goals
-In today’s education landscape, peer review plays a crucial role in enhancing student engagement and critical thinking. However, different subjects—like **computer programming** vs. **essay writing**—may have drastically different peer review effectiveness. Meanwhile, **AI-based grading systems** are emerging, raising questions about how they compare with human assessments.
+In today's education landscape, peer review plays a crucial role in enhancing student engagement and critical thinking. However, different subjects—like **computer programming** vs. **essay writing**—may have drastically different peer review effectiveness. Meanwhile, **AI-based grading systems** are emerging, raising questions about how they compare with human assessments.
 
 Our project sets out to:
 - Compare consistency and fairness of peer reviews in coding vs. essay tasks
@@ -22,9 +22,43 @@ Explore the **[Comparison](/comparison/)** page for interactive charts and data 
 - **78%** → Essay peer reviews align with instructor feedback  
 - **92%** → AI-human agreement rate on coding tasks  
 
+## Getting Started
 
+Want to run this site locally or contribute to the project? Follow these steps:
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/cswenyuanxiao/SingleProject.git
+   cd SingleProject/quickstart
+   ```
 
+2. **Use our setup scripts**
+   
+   For macOS/Linux:
+   ```bash
+   ./setup.sh
+   ```
+   
+   For Windows:
+   ```batch
+   setup.bat
+   ```
+   
+   Or manually install dependencies:
+   ```bash
+   npm install
+   hugo mod get -u
+   ```
+
+3. **Run the site**
+   ```bash
+   hugo server -D
+   ```
+
+4. **Open in browser**
+   Visit [http://localhost:1313/SingleProject/](http://localhost:1313/SingleProject/)
+
+For more details, see our [README](https://github.com/cswenyuanxiao/SingleProject) on GitHub.
 
 Readme-style Template
 

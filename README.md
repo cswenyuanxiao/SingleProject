@@ -20,26 +20,52 @@ The Peer Review Resource Center is a comprehensive website designed to provide h
 - Font Awesome icons
 - Custom CSS (parchment-theme.css)
 
-## Installation & Usage
+## Installation & Local Development
+
+### Prerequisites
+
+- [Hugo](https://gohugo.io/installation/) (Extended version recommended)
+- [Node.js](https://nodejs.org/) (Version 16 or higher)
+- [npm](https://www.npmjs.com/) (Comes with Node.js)
+
+### Setup Instructions
 
 1. Clone this repository
-   ```
-   git clone https://github.com/yourusername/peer-review-resource.git
+   ```bash
+   git clone https://github.com/cswenyuanxiao/SingleProject.git
+   cd SingleProject
    ```
 
-2. Install Hugo (if not already installed)
-   ```
-   brew install hugo  # macOS
-   # or other installation method appropriate for your OS
+2. Install dependencies
+   ```bash
+   cd quickstart
+   npm install
    ```
 
 3. Run the site locally
-   ```
-   cd peer-review-resource
+   ```bash
    hugo server -D
    ```
 
-4. Visit `http://localhost:1313` in your browser
+4. Visit `http://localhost:1313/SingleProject/` in your browser
+
+### Troubleshooting Common Issues
+
+- If you encounter errors related to missing Hugo modules, run:
+  ```bash
+  hugo mod get -u
+  ```
+
+- If you need to clean the build cache:
+  ```bash
+  hugo --cleanDestinationDir
+  ```
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages through GitHub Actions whenever changes are pushed to the main branch.
+
+You can access the live version at: https://cswenyuanxiao.github.io/SingleProject/
 
 ## Project Structure
 
@@ -73,9 +99,6 @@ The Peer Review Resource Center is a comprehensive website designed to provide h
 └── config.toml          # Hugo configuration file
 ```
 
-
-
-
 ## Custom Theme
 
 This project uses a custom parchment theme with the following characteristics:
@@ -107,4 +130,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any questions or suggestions, please contact us at:
 
 - Email: 2715237x@student.gla.ac.uk
-- GitHub Issues: [Create a new issue][(https://github.com/cswenyuanxiao/SingleProject/issues/new)]
+- GitHub Issues: [Create a new issue](https://github.com/cswenyuanxiao/SingleProject/issues/new)
