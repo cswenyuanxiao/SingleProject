@@ -1,11 +1,11 @@
-baseURL = 'https://cswenyuanxiao.github.io/SingleProject/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Home'
 theme = 'hugo-bootstrap-theme'
 themesDir = 'node_modules/@filipecarneiro'
 
-# 确保URL路径正确
-canonifyURLs = true
+# 禁用规范化 URL，以便相对路径能正常工作
+canonifyURLs = false
 
 [params]
 description = "Interactive analysis of peer review effectiveness in computing science courses"
