@@ -1,0 +1,8 @@
+
+{{ $index := slice }}
+{{ range where .Site.RegularPages "Section" "ne" "" }}
+    {{ $page := . }}
+    {{ $data := dict "title" .Title "permalink" .Permalink "date" (.Date.Format "January 2, 2006") "summary" .Summary "content" .Plain "section" .Section }}
+    {{ $index = $index | append $data }}
+{{ end }}
+{{ $index | jsonify }}

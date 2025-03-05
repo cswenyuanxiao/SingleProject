@@ -1,0 +1,47 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.08" numOctaves="3" result="noise" seed="42"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.15 0" result="coloredNoise"/>
+      <feComposite operator="in" in="coloredNoise" in2="SourceGraphic" result="composite"/>
+    </filter>
+    <pattern id="paper" width="400" height="400" patternUnits="userSpaceOnUse">
+      <rect width="400" height="400" fill="#FFF8E1"/>
+      <rect width="400" height="400" filter="url(#noise)" fill="#F5F5DC" opacity="0.7"/>
+      <rect width="400" height="400" fill="transparent" style="mix-blend-mode: multiply;"/>
+      
+      <!-- Subtle speckles -->
+      <g fill="#D7CCC8" opacity="0.05">
+        <circle cx="30" cy="60" r="1.5" />
+        <circle cx="120" cy="30" r="1" />
+        <circle cx="180" cy="200" r="1.2" />
+        <circle cx="250" cy="110" r="1" />
+        <circle cx="300" cy="290" r="1.3" />
+        <circle cx="70" cy="250" r="1.1" />
+        <circle cx="200" cy="370" r="1" />
+        <circle cx="340" cy="180" r="1.5" />
+        <circle cx="90" cy="330" r="1.2" />
+        <circle cx="380" cy="70" r="1" />
+        <circle cx="150" cy="140" r="1.4" />
+        <circle cx="280" cy="360" r="1.2" />
+      </g>
+      
+      <!-- Subtle fiber lines -->
+      <g stroke="#D7CCC8" opacity="0.03" stroke-width="0.5">
+        <line x1="0" y1="50" x2="400" y2="40" />
+        <line x1="0" y1="120" x2="400" y2="130" />
+        <line x1="0" y1="200" x2="400" y2="190" />
+        <line x1="0" y1="270" x2="400" y2="280" />
+        <line x1="0" y1="350" x2="400" y2="340" />
+        
+        <line x1="50" y1="0" x2="40" y2="400" />
+        <line x1="130" y1="0" x2="140" y2="400" />
+        <line x1="220" y1="0" x2="210" y2="400" />
+        <line x1="300" y1="0" x2="310" y2="400" />
+        <line x1="380" y1="0" x2="370" y2="400" />
+      </g>
+    </pattern>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#paper)"/>
+</svg> 

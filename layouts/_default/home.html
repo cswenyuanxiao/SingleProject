@@ -1,0 +1,134 @@
+{{ define "main" }}
+<div class="container mt-5">
+    <!-- Hero Section with Background -->
+    <div class="row mb-5">
+        <div class="col-12 text-center py-5 rounded shadow-sm hero-section">
+            <h1 class="display-4 fw-bold text-brown">{{ .Title }}</h1>
+            <p class="lead col-md-8 mx-auto text-secondary">{{ .Description }}</p>
+            <hr class="my-4 w-25 mx-auto">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Main Content Section -->
+        <div class="col-lg-8">
+            <!-- Feature Cards with Icons -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 h-100 border-0 transition-hover feature-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-container-primary p-3 me-3">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="mb-0"><a href="/comparison/" class="text-decoration-none text-brown">Comparison</a></h3>
+                        </div>
+                        <p class="text-secondary">Explore AI vs. human grading, coding vs. essay-based grading comparisons with interactive visualizations.</p>
+                        <div class="mt-auto">
+                            <a href="/comparison/" class="btn">Explore Data <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 h-100 border-0 transition-hover feature-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-container-secondary p-3 me-3">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="mb-0"><a href="/suggestions/" class="text-decoration-none text-brown">Suggestions</a></h3>
+                        </div>
+                        <p class="text-secondary">Submit your recommendations for improving peer review processes and methodologies.</p>
+                        <div class="mt-auto">
+                            <a href="/suggestions/" class="btn">Submit Ideas <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main markdown content with enhanced styling -->
+            <div class="mt-5 content-area text-brown">
+                {{ .Content }}
+            </div>
+        </div>
+        
+        <!-- Sidebar with enhanced styling -->
+        <div class="col-lg-4">
+            <div class="sticky-top">
+                <!-- Tag cloud with better styling -->
+                <div class="card shadow-sm mb-4 border-0">
+                    <div class="card-header">
+                        <h4 class="mb-0">Research Topics</h4>
+                    </div>
+                    <div class="card-body">
+                        {{ partial "tag-cloud.html" . }}
+                    </div>
+                </div>
+                
+                <!-- Recent posts with enhanced styling -->
+                <div class="card shadow-sm mb-4 border-0">
+                    <div class="card-header">
+                        <h4 class="mb-0">Recent Updates</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            {{ range first 5 .Site.RegularPages }}
+                            <li class="mb-3 pb-2 border-bottom">
+                                <a href="{{ .RelPermalink }}" class="text-decoration-none fw-bold text-brown">{{ .Title }}</a>
+                                <small class="d-block text-muted">{{ .Date.Format "Jan 2, 2006" }}</small>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- New call-to-action card -->
+                <div class="card shadow-sm mb-4 border-0 alert">
+                    <div class="card-body text-center p-4">
+                        <h5 class="text-brown">Join Our Research</h5>
+                        <p class="mb-3 text-secondary">Contribute to improving peer review effectiveness across educational contexts.</p>
+                        <a href="/get-involved/" class="btn btn-primary">Get Involved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Enhanced styling for content */
+    .content-area h2 {
+        margin-top: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #D7CCC8;
+        color: #5D4037;
+    }
+    
+    .content-area ul {
+        padding-left: 1.2rem;
+    }
+    
+    .transition-hover {
+        transition: transform 0.3s ease;
+    }
+    
+    .transition-hover:hover {
+        transform: translateY(-5px);
+    }
+    
+    /* Style for key insights */
+    .content-area strong {
+        color: #795548;
+    }
+
+    /* Style for links in content */
+    .content-area a {
+        color: #8D6E63;
+        text-decoration: underline;
+        text-decoration-color: #D7CCC8;
+    }
+
+    .content-area a:hover {
+        color: #5D4037;
+    }
+</style>
+{{ end }}

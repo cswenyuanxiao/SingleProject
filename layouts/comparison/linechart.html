@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "navbar.html" . }}
+
+    <main class="container my-4">
+      <h1>{{ .Title }}</h1>
+
+      <!--  Canvas of linechart -->
+      <canvas id="peerReviewChart"
+              width="400" height="200"
+              data-labels='{{ .Params.chart.labels | jsonify }}'
+              data-ai='{{ .Params.chart.ai | jsonify }}'
+              data-human='{{ .Params.chart.human | jsonify }}'>
+      </canvas>
+
+      <!-- .Content -->
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+  
+    </main>
+    <!-- Add comments section -->
+    {{ partial "comments.html" . }}
+
+    {{ partial "footer.html" . }}
+
+    <!-- Import chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Import chart-init.js（Or write a new one that specialises in drawing line graphs, like chart-init-line.js） -->
+    <script src="/js/chart-init-line.js"></script>
+
+  </body>
+</html>
