@@ -1,12 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #f5f5dc; border-bottom: 1px solid #d7ccc8;">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/" style="color: #5D4037; font-weight: 600;">
       {{ .Site.Title }}
     </a>
     
     <!-- Mobile toggle button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #d7ccc8;">
       <span class="navbar-toggler-icon"></span>
     </button>
     
@@ -14,16 +15,20 @@
       <ul class="navbar-nav me-auto">
         {{ range .Site.Menus.main }}
         <li class="nav-item">
-          <a class="nav-link{{ if eq .URL $.RelPermalink }} active{{ end }}" href="{{ .URL }}">
+          <a class="nav-link{{ if eq .URL $.RelPermalink }} active{{ end }}" 
+             href="{{ .URL }}" 
+             style="color: #795548;">
             {{ .Name }}
-            {{ if eq .Name "Comparison analysis" }}<span class="badge bg-warning ms-2">New</span>{{ end }}
+            {{ if eq .Name "Comparison analysis" }}<span class="badge bg-warning text-dark ms-2" style="background-color: #efebe9 !important; color: #8d6e63 !important; border: 1px solid #d7ccc8;">New</span>{{ end }}
           </a>
         </li>
         {{ end }}
       </ul>
       <form class="d-flex" action="/search" method="get">
-        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search">
-        <button class="btn btn-outline-light" type="submit">🔍</button>
+        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search" 
+               style="border-color: #d7ccc8; background-color: #fff8e1;">
+        <button class="btn btn-outline-primary" type="submit" 
+                style="border-color: #8d6e63; color: #795548; background-color: transparent;">🔍</button>
       </form>
     </div>
   </div>

@@ -1,12 +1,13 @@
 {{ define "main" }}
-<div class="section-hero bg-success text-white py-5 mb-5">
-    <div class="container">
-        <h1 class="display-4 fw-bold">{{ .Title }}</h1>
-        <p class="lead col-md-8">{{ .Description }}</p>
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold">{{ .Title }}</h1>
+            <p class="lead">{{ .Description }}</p>
+            <hr class="my-4 w-25 mx-auto">
+        </div>
     </div>
-</div>
 
-<div class="container">
     <div class="row g-4">
         <div class="col-lg-8 mb-5">
             <div class="content-card p-4 shadow-sm rounded">
@@ -15,8 +16,8 @@
             
             <div class="mt-5">
                 <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-success text-white">
-                        <h3 class="h4 mb-0"><i class="fas fa-lightbulb me-2"></i>Submit Your Suggestion</h3>
+                    <div class="card-header bg-white border-bottom">
+                        <h3 class="h4 mb-0 text-success"><i class="fas fa-lightbulb me-2"></i>Submit Your Suggestion</h3>
                     </div>
                     <div class="card-body p-4">
                         <form action="https://formspree.io/f/xaygojwn" method="POST" class="needs-validation" novalidate>
@@ -46,7 +47,7 @@
                                 <div class="form-text">Share your ideas for improving peer review effectiveness.</div>
                             </div>
                             
-                            <button type="submit" class="btn btn-success btn-lg">
+                            <button type="submit" class="btn btn-outline-success btn-lg">
                                 <i class="fas fa-paper-plane me-2"></i>Submit Suggestion
                             </button>
                         </form>
@@ -58,21 +59,21 @@
         <div class="col-lg-4">
             <div class="sticky-top" style="top: 2rem;">
                 <div class="sidebar-card p-4 shadow-sm rounded bg-light mb-4">
-                    <h4 class="border-bottom pb-2 mb-3"><i class="fas fa-info-circle me-2"></i>Why Contribute?</h4>
+                    <h4 class="border-bottom pb-2 mb-3 text-success"><i class="fas fa-info-circle me-2"></i>Why Contribute?</h4>
                     <p>Your suggestions help improve peer review systems across educational contexts. We value input from:</p>
                     <ul class="list-group list-group-flush mb-3">
                         <li class="list-group-item bg-transparent"><i class="fas fa-user-graduate text-success me-2"></i>Students</li>
                         <li class="list-group-item bg-transparent"><i class="fas fa-chalkboard-teacher text-success me-2"></i>Educators</li>
                         <li class="list-group-item bg-transparent"><i class="fas fa-cogs text-success me-2"></i>System Designers</li>
                     </ul>
-                    <div class="alert alert-success">
-                        <i class="fas fa-shield-alt me-2"></i>All submissions are confidential and reviewed by our research team.
+                    <div class="alert alert-light">
+                        <i class="fas fa-shield-alt text-success me-2"></i>All submissions are confidential and reviewed by our research team.
                     </div>
                 </div>
                 
                 <div class="card border-0 shadow-sm">
                     <div class="card-body p-4">
-                        <h5><i class="fas fa-star me-2 text-warning"></i>Top Suggestions</h5>
+                        <h5 class="border-bottom pb-2 mb-3"><i class="fas fa-star me-2 text-warning"></i>Top Suggestions</h5>
                         <ul class="list-unstyled mt-3">
                             <li class="mb-3 pb-2 border-bottom">
                                 <p class="mb-1 fst-italic">"Implement double-blind peer review for all assignments."</p>

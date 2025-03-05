@@ -3,34 +3,34 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <!-- Title -->
-      <h1 class="text-center">{{ .Title }}</h1>
+      <h1 class="text-center text-brown">{{ .Title }}</h1>
       {{ if gt .Date.Year 2000 }}
-        <p class="text-muted text-center">{{ .Date.Format "January 2, 2006" }}</p>
+        <p class="text-center text-muted">{{ .Date.Format "January 2, 2006" }}</p>
       {{ end }}
 
       <!-- Categories and Tags -->
       <div class="text-center mb-4">
         {{ with .Params.categories }}
           <div class="mb-2">
-            <strong>Categories: </strong>
+            <strong class="text-secondary">Categories: </strong>
             {{ range . }}
-              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="badge bg-primary text-decoration-none me-1">{{ . }}</a>
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="badge text-decoration-none me-1">{{ . }}</a>
             {{ end }}
           </div>
         {{ end }}
         
         {{ with .Params.tags }}
           <div>
-            <strong>Tags: </strong>
+            <strong class="text-secondary">Tags: </strong>
             {{ range . }}
-              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge bg-secondary text-decoration-none me-1">{{ . }}</a>
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge text-decoration-none me-1">{{ . }}</a>
             {{ end }}
           </div>
         {{ end }}
       </div>
 
       <!-- Content card -->
-      <div class="card shadow-sm p-4">
+      <div class="content-card shadow-sm p-4">
         {{ .Content }}
       </div>
 
@@ -38,14 +38,14 @@
       {{ $related := .Site.RegularPages.Related . | first 3 }}
       {{ with $related }}
       <div class="mt-5">
-        <h3>Related Content</h3>
+        <h3 class="text-brown">Related Content</h3>
         <div class="row">
           {{ range . }}
           <div class="col-md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100 transition-hover">
               <div class="card-body">
-                <h5 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
-                <p class="card-text small">{{ .Summary | truncate 100 }}</p>
+                <h5 class="card-title"><a href="{{ .RelPermalink }}" class="text-secondary text-decoration-none">{{ .Title }}</a></h5>
+                <p class="card-text small text-muted">{{ .Summary | truncate 100 }}</p>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
 
       <!-- Return button -->
       <div class="text-center mt-4">
-        <a href="/{{ .Section }}" class="btn btn-secondary">Back to {{ .Section | title }}</a>
+        <a href="/{{ .Section }}" class="btn">Back to {{ .Section | title }}</a>
       </div>
     </div>
   </div>

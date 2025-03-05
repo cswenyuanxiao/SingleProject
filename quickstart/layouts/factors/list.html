@@ -1,26 +1,77 @@
 {{ define "main" }}
 <div class="container mt-5">
-    <h1 class="text-center">{{ .Title }}</h1>
-    <p class="text-muted text-center">{{ .Description }}</p>
-
-    <div class="content">
-        {{ .Content }}
+    <div class="row mb-4">
+        <div class="col-md-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold text-brown">{{ .Title }}</h1>
+            <p class="lead text-secondary">{{ .Description }}</p>
+            <hr class="my-4 w-25 mx-auto">
+        </div>
     </div>
 
-    <div class="row">
-        {{ range .Pages }}
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
-                    </h5>
-                    <p class="card-text">{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+    <div class="row g-4 mb-5">
+        <div class="col-lg-8">
+            <div class="content-card p-4 shadow-sm rounded">
+                {{ .Content }}
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="sidebar-card p-4 shadow-sm rounded">
+                <h4 class="border-bottom pb-2 mb-3 text-secondary"><i class="fas fa-filter me-2"></i>About Factors</h4>
+                <p class="text-brown">These factors influence the effectiveness and quality of peer review processes across different educational contexts.</p>
+                <div class="alert">
+                    <i class="fas fa-lightbulb me-2 text-muted"></i> Understanding these factors helps educators design more effective peer review activities.
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title mb-4 text-brown">Key Influence Factors</h2>
+    <div class="row g-4">
+        {{ range .Pages }}
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 factor-card border-0 shadow-sm transition-hover">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-container-tertiary p-3 me-3">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="card-title h5 mb-0 text-brown">{{ .Title }}</h3>
+                    </div>
+                    <p class="card-text text-secondary">{{ .Description }}</p>
+                    
+                    {{ if .Params.tags }}
+                    <div class="my-3">
+                        {{ range .Params.tags }}
+                        <span class="badge me-1 mb-1">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                <div class="card-footer">
+                    <a href="{{ .RelPermalink }}" class="btn stretched-link">
+                        Read More <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+                {{ if .Params.weight }}
+                <div class="factor-impact position-absolute top-0 end-0 m-2">
+                    <span class="badge">Impact: {{ .Params.weight }}/10</span>
+                </div>
+                {{ end }}
             </div>
         </div>
         {{ end }}
     </div>
+
+    <div class="mt-5">
+        {{ partial "comments.html" . }}
+    </div>
+
+    <!-- Filter script for future implementation -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Future enhancement: Add filter functionality for factors
+        // based on tags or other metadata
+    });
+    </script>
 </div>
 {{ end }}
