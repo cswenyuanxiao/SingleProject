@@ -1,7 +1,5 @@
 # Peer Review Resource Center
 
-![Parchment Theme Preview](static/images/preview.png)
-
 ## Project Overview
 
 The Peer Review Resource Center is a comprehensive website designed to provide high-quality educational peer review resources, research, and tools. This project employs a warm parchment design theme, offering educators and researchers an intuitive and visually appealing interface to explore and utilize peer review content.
@@ -44,22 +42,69 @@ The Peer Review Resource Center is a comprehensive website designed to provide h
 4. Visit `http://localhost:1313` in your browser
 
 ## Project Structure
-├── content/ # Website content
-│ ├── comparison/ # Comparison analysis content
-│ ├── factors/ # Influence factors content
-│ ├── feedback/ # Feedback examples content
-│ └── suggestions/ # Suggestions content
-├── layouts/ # Page templates
-│ ├── default/ # Default templates
-│ ├── comparison/ # Comparison templates
-│ ├── factors/ # Factors templates
-│ ├── feedback/ # Feedback templates
-│ ├── partials/ # Partial template components
-│ └── suggestions/ # Suggestions templates
-├── static/ # Static assets
-│ ├── css/ # Stylesheets
-│ │ ├── custom.css # Custom styles
-│ │ └── parchment-theme.css # Parchment theme styles
-│ ├── images/ # Image assets
-│ └── js/ # JavaScript files
-└── config.toml # Hugo configuration file
+
+```plaintext
+├── content/              # Website content
+│   ├── home/            # Homepage content
+│   ├── comparison/      # Review method comparisons (charts, tables)
+│   ├── factors/         # Factors influencing review effectiveness
+│   ├── feedback/        # Example peer reviews & best practices
+│   ├── suggestions/     # User-submitted suggestions & discussion
+│   └── blog/            # Updates & research insights (optional)
+│
+├── layouts/             # Hugo page templates
+│   ├── _default/        # Default templates for all pages
+│   ├── comparison/      # Templates for comparison visualizations
+│   ├── factors/         # Templates for factor analysis pages
+│   ├── feedback/        # Templates for displaying feedback examples
+│   ├── suggestions/     # Templates for suggestion submission & review
+│   ├── shortcodes/      # Custom Hugo shortcodes (for rendering components)
+│   └── partials/        # Shared UI components (header, footer, sidebar)
+│
+├── static/              # Static assets (CSS, JS, Images)
+│   ├── css/             # Stylesheets
+│   │   ├── custom.css   # Custom theme styles
+│   │   └── parchment-theme.css # Parchment design theme
+│   ├── js/              # JavaScript files (Chart.js, Search, etc.)
+│   ├── images/          # Static images (logos, UI assets)
+│
+├── data/                # Optional: External data files (JSON, YAML)
+│
+└── config.toml          # Hugo configuration file
+```
+
+
+
+
+## Custom Theme
+
+This project uses a custom parchment theme with the following characteristics:
+
+- Warm beige/cream backgrounds
+- Various brown tones for text and buttons
+- Smooth transitions and hover effects
+- Unified styling for cards, badges, and buttons
+- High-contrast design for readability
+
+To modify the theme, edit the `static/css/parchment-theme.css` file.
+
+## Contributing
+
+Contributions to this project are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Contact
+
+For any questions or suggestions, please contact us at:
+
+- Email: 2715237x@student.gla.ac.uk
+- GitHub Issues: [Create a new issue][(https://github.com/cswenyuanxiao/SingleProject/issues/new)]
