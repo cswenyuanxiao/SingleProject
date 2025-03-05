@@ -1,13 +1,13 @@
-# 已禁用的 GitHub Actions 工作流
+# Disabled GitHub Actions workflow
 name: DISABLED - Hugo site deployment
 
 on:
-  # 仅在手动触发时执行，实际上已完全禁用
+  # Only triggered manually, effectively fully disabled
   workflow_dispatch:
   # push:
   #   branches: ["main"]
 
-# 以下内容保留仅作参考
+# Content retained for reference only
 # permissions:
 #   contents: read
 #   pages: write
@@ -18,7 +18,7 @@ on:
 #   cancel-in-progress: true
 
 jobs:
-  # 空作业，不执行任何操作
+  # Empty job, performs no operations
   disabled:
     runs-on: ubuntu-latest
     steps:

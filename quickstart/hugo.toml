@@ -1,10 +1,10 @@
-baseURL = '/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Home'
 theme = 'hugo-bootstrap-theme'
 themesDir = 'node_modules/@filipecarneiro'
 
-# 禁用规范化 URL，以便相对路径能正常工作
+# Disable URL canonicalization to allow relative paths to work properly
 canonifyURLs = false
 
 [params]
