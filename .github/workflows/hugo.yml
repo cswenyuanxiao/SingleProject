@@ -58,6 +58,14 @@ jobs:
           cd quickstart
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Setup upload-artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: dummy-artifact
+          path: ./quickstart/public/index.html
+          retention-days: 1
+          if-no-files-found: ignore
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
