@@ -16,19 +16,19 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-# Default to bash
-defaults:
-  run:
-    shell: bash
-
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           submodules: recursive
+      
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
       
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -36,7 +36,14 @@ jobs:
           hugo-version: '0.115.4'
           extended: true
 
-      - name: Install Node.js dependencies
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+          cache-dependency-path: quickstart/package-lock.json
+
+      - name: Install dependencies
         run: |
           cd quickstart
           npm ci
@@ -48,10 +55,10 @@ jobs:
           HUGO_ENV: production
         run: |
           cd quickstart
-          hugo --minify
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./quickstart/public
 
@@ -65,4 +72,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1 
+        uses: actions/deploy-pages@v2 
