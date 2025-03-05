@@ -1,4 +1,4 @@
-# coding-vs-essay.yaml → 移动到 data/charts/ 目录下
+# coding-vs-essay.yaml - moved to data/charts/ directory
 # data/charts/coding-vs-essay.yaml
 title: "Coding vs. Essay-based Reviews"
 description: "Comparing peer review effectiveness between coding and essay-based assessments."
