@@ -45,6 +45,7 @@ body {
   background-color: var(--parchment-bg);
   color: var(--parchment-text);
   font-family: 'Georgia', serif;
+  padding-top: 0; /* 不需要额外的padding，因为我们使用mt-5类 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -284,8 +285,11 @@ hr {
 
 /* 导航栏样式 */
 .navbar {
-  background-color: var(--parchment-light);
-  border-bottom: 1px solid var(--parchment-border);
+  z-index: 1030;
+  background-color: #f5f5dc !important; 
+  border-bottom: 1px solid #d7ccc8 !important;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
 
 .navbar-brand, .nav-link {
@@ -299,6 +303,38 @@ hr {
 .navbar .nav-link.active {
   color: var(--parchment-text-dark);
   font-weight: 600;
+}
+
+/* 修复侧边栏滚动覆盖导航栏的问题 */
+.sticky-top {
+  position: sticky !important;
+  z-index: 10 !important; /* 基础z-index值 */
+}
+
+/* 导航栏特定样式 - 确保覆盖任何其他.navbar定义 */
+.navbar.sticky-top, 
+.navbar.navbar-expand-lg.sticky-top {
+  position: fixed !important;
+  top: 0 !important; /* 导航栏固定在顶部 */
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 1030 !important; /* 高z-index确保导航栏在最上层 */
+}
+
+/* 侧边栏特定样式 */
+.col-lg-4 .sticky-top,
+div[class*="col-"] .sticky-top {
+  position: sticky !important;
+  top: 80px !important; /* 为侧边栏设置偏移，避免覆盖导航栏 */
+  z-index: 10 !important; /* 较低的z-index */
+}
+
+/* 搜索框定位修复 */
+.form-control[type="search"],
+.navbar .form-control[type="search"] {
+  z-index: 1031 !important; /* 确保搜索框在导航栏上层 */
+  position: relative !important;
 }
 
 /* 引用和代码块 */
@@ -525,4 +561,9 @@ footer {
 
 .card:hover .icon-container-tertiary {
   background-color: #D7CCC8;
+}
+
+/* 确保主内容区域不被固定导航栏覆盖 */
+.container.mt-5 {
+  padding-top: 20px !important; /* 添加额外的顶部边距 */
 } 
