@@ -1,26 +1,26 @@
 /* Parchment Theme - Global Styles */
 
 :root {
-  /* 主色调 - 暖色系 */
-  --primary-color: #5D4037;        /* 深褐色 */
-  --primary-light: #8D6E63;        /* 中褐色 */
-  --primary-very-light: #D7CCC8;   /* 浅褐色 */
+  /* Main Colors - Warm Tones */
+  --primary-color: #5D4037;        /* Deep Brown */
+  --primary-light: #8D6E63;        /* Medium Brown */
+  --primary-very-light: #D7CCC8;   /* Light Brown */
   
-  /* 背景色调 */
-  --bg-color: #FFF8E1;             /* 浅米色背景 */
-  --bg-color-alt: #F5F5DC;         /* 略深米色背景(卡片) */
-  --bg-color-content: #FFF8E1;     /* 内容卡片 */
+  /* Background Colors */
+  --bg-color: #FFF8E1;             /* Light Beige Background */
+  --bg-color-alt: #F5F5DC;         /* Slightly Darker Beige Background (Cards) */
+  --bg-color-content: #FFF8E1;     /* Content Card */
   
-  /* 边框和分割线 */
-  --border-color: #D7CCC8;         /* 浅褐色边框 */
-  --divider-color: #BCAAA4;        /* 中褐色分割线 */
+  /* Borders and Dividers */
+  --border-color: #D7CCC8;         /* Light Brown Border */
+  --divider-color: #BCAAA4;        /* Medium Brown Divider */
   
-  /* 文本颜色 */
-  --text-primary: #3E2723;         /* 深褐色文本 */
-  --text-secondary: #5D4037;       /* 中褐色文本 */
-  --text-muted: #8D6E63;           /* 浅褐色文本 */
+  /* Text Colors */
+  --text-primary: #3E2723;         /* Deep Brown Text */
+  --text-secondary: #5D4037;       /* Medium Brown Text */
+  --text-muted: #8D6E63;           /* Light Brown Text */
   
-  /* 状态颜色 */
+  /* Status Colors */
   --success-color: #2E7D32;
   --error-color: #C62828;
   --warning-color: #F9A825;
@@ -45,7 +45,7 @@ body {
   background-color: var(--parchment-bg);
   color: var(--parchment-text);
   font-family: 'Georgia', serif;
-  padding-top: 0; /* 不需要额外的padding，因为我们使用mt-5类 */
+  padding-top: 0; /* No extra padding needed since we use the mt-5 class */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,8 +113,11 @@ hr {
 
 /* Sidebar Styling */
 .sidebar-card {
-  background-color: var(--parchment-light);
-  border-color: var(--parchment-dark);
+  background-color: #F5F5DC;
+  border: 1px solid #D7CCC8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(93, 64, 55, 0.05);
 }
 
 /* Alert Styling */
@@ -283,7 +286,7 @@ hr {
   pointer-events: none;
 }
 
-/* 导航栏样式 */
+/* Navbar Styles */
 .navbar {
   z-index: 1030;
   background-color: #f5f5dc !important; 
@@ -305,39 +308,39 @@ hr {
   font-weight: 600;
 }
 
-/* 修复侧边栏滚动覆盖导航栏的问题 */
+/* Fix for sidebar scroll overlapping navbar issue */
 .sticky-top {
   position: sticky !important;
-  z-index: 10 !important; /* 基础z-index值 */
+  z-index: 10 !important; /* Base z-index value */
 }
 
-/* 导航栏特定样式 - 确保覆盖任何其他.navbar定义 */
+/* Navbar specific styles - ensure overrides for any other .navbar definitions */
 .navbar.sticky-top, 
 .navbar.navbar-expand-lg.sticky-top {
   position: fixed !important;
-  top: 0 !important; /* 导航栏固定在顶部 */
+  top: 0 !important; /* Navbar fixed at the top */
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
-  z-index: 1030 !important; /* 高z-index确保导航栏在最上层 */
+  z-index: 1030 !important; /* High z-index ensures navbar stays on top */
 }
 
-/* 侧边栏特定样式 */
+/* Sidebar specific styles */
 .col-lg-4 .sticky-top,
 div[class*="col-"] .sticky-top {
   position: sticky !important;
-  top: 80px !important; /* 为侧边栏设置偏移，避免覆盖导航栏 */
-  z-index: 10 !important; /* 较低的z-index */
+  top: 80px !important; /* Set offset for sidebar to avoid overlapping navbar */
+  z-index: 10 !important; /* Lower z-index */
 }
 
-/* 搜索框定位修复 */
+/* Search box positioning fix */
 .form-control[type="search"],
 .navbar .form-control[type="search"] {
-  z-index: 1031 !important; /* 确保搜索框在导航栏上层 */
+  z-index: 1031 !important; /* Ensure search box stays above navbar */
   position: relative !important;
 }
 
-/* 引用和代码块 */
+/* Blockquotes and Code Blocks */
 blockquote {
   border-left: 4px solid var(--primary-very-light);
   padding-left: 1rem;
@@ -351,7 +354,7 @@ pre, code {
   border-radius: 3px;
 }
 
-/* 列表样式 */
+/* List Styles */
 ul.custom-list {
   list-style-type: none;
   padding-left: 1.5rem;
@@ -365,7 +368,7 @@ ul.custom-list li:before {
   margin-left: -1em;
 }
 
-/* 页脚样式 */
+/* Footer Styles */
 footer {
   background-color: var(--parchment-light);
   border-top: 1px solid var(--parchment-border);
@@ -436,7 +439,7 @@ footer {
   transform: translateY(-5px);
 }
 
-/* 优化按钮悬停效果 */
+/* Optimized Button Hover Effects */
 .btn:hover {
   background-color: #8D6E63;
   color: #FFF8E1;
@@ -445,13 +448,13 @@ footer {
   transform: translateY(-2px);
 }
 
-/* 卡片悬停效果 */
+/* Card Hover Effects */
 .card.transition-hover:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(93, 64, 55, 0.1);
 }
 
-/* 高对比度标签样式 */
+/* High Contrast Badge Styles */
 .badge {
   display: inline-block;
   padding: 0.4em 0.65em;
@@ -473,7 +476,7 @@ footer {
   text-decoration: none;
 }
 
-/* 统一卡片样式 */
+/* Unified Card Styles */
 .card {
   background-color: #F5F5DC;
   border: 1px solid #D7CCC8;
@@ -505,7 +508,7 @@ footer {
   box-shadow: 0 2px 4px rgba(93, 64, 55, 0.05);
 }
 
-/* 统一按钮样式 */
+/* Unified Button Styles */
 .btn {
   display: inline-block;
   font-weight: 500;
@@ -563,7 +566,7 @@ footer {
   background-color: #D7CCC8;
 }
 
-/* 确保主内容区域不被固定导航栏覆盖 */
+/* Ensure main content area is not covered by fixed navbar */
 .container.mt-5 {
-  padding-top: 20px !important; /* 添加额外的顶部边距 */
+  padding-top: 20px !important; /* Add extra top padding */
 } 
