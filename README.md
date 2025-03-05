@@ -44,3 +44,22 @@ The Peer Review Resource Center is a comprehensive website designed to provide h
 4. Visit `http://localhost:1313` in your browser
 
 ## Project Structure
+├── content/ # Website content
+│ ├── comparison/ # Comparison analysis content
+│ ├── factors/ # Influence factors content
+│ ├── feedback/ # Feedback examples content
+│ └── suggestions/ # Suggestions content
+├── layouts/ # Page templates
+│ ├── default/ # Default templates
+│ ├── comparison/ # Comparison templates
+│ ├── factors/ # Factors templates
+│ ├── feedback/ # Feedback templates
+│ ├── partials/ # Partial template components
+│ └── suggestions/ # Suggestions templates
+├── static/ # Static assets
+│ ├── css/ # Stylesheets
+│ │ ├── custom.css # Custom styles
+│ │ └── parchment-theme.css # Parchment theme styles
+│ ├── images/ # Image assets
+│ └── js/ # JavaScript files
+└── config.toml # Hugo configuration file
