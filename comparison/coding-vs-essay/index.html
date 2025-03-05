@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/parchment-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="color: #5D4037; font-weight: 600;">
+      Home
+    </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #d7ccc8;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/comparison/" 
+             style="color: #795548;">
+            Comparison
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/factors/" 
+             style="color: #795548;">
+            Factors
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/suggestions/" 
+             style="color: #795548;">
+            Suggestions
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/feedback/" 
+             style="color: #795548;">
+            Feedback
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/blog" 
+             style="color: #795548;">
+            Blog
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/tools/" 
+             style="color: #795548;">
+            Tools
+            
+          </a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" action="/search" method="get">
+        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search" 
+               style="border-color: #d7ccc8; background-color: #fff8e1;">
+        <button class="btn btn-outline-primary" type="submit" 
+                style="border-color: #8d6e63; color: #795548; background-color: transparent;">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-4">
+    <h1>Coding vs. Essay-based Reviews</h1>
+    <p>Comparing peer review effectiveness between coding and essay-based assessments.</p>
+
+    
+    
+    <canvas id="peerReviewChart"
+        width="400" height="200"
+        data-labels='[&#34;Assignment 1&#34;,&#34;Assignment 2&#34;,&#34;Assignment 3&#34;,&#34;Assignment 4&#34;,&#34;Assignment 5&#34;]'
+        data-coding='[85,90,78,88,150]'
+        data-essay='[75,80,82,79,85]'>
+    </canvas>
+
+    
+    <div class="content">
+      <h2 id="key-findings">Key Findings</h2>
+<ul>
+<li><strong>Coding reviews</strong> tend to have <strong>higher consistency</strong> in grading.</li>
+<li><strong>Essay reviews</strong> show <strong>greater variation</strong> in scores.</li>
+</ul>
+<h2 id="future-recommendations">Future Recommendations</h2>
+<ul>
+<li>Improve <strong>essay review rubrics</strong> to ensure grading consistency.</li>
+<li>Introduce <strong>peer discussion</strong> for essay reviews.</li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="comments-section mt-5">
+  <h3>Comments</h3>
+  <div id="disqus_thread"></div>
+  <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://project-bnl3amf11h.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+
+  </div>
+
+  <footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Individual Project - University of Glasgow</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">Built with Hugo & Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart-init.js"></script>
+</body>
+</html>

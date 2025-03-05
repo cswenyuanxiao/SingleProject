@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/lazy-load.js"></script>
+
+  <head>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/parchment-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="color: #5D4037; font-weight: 600;">
+      Home
+    </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #d7ccc8;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/comparison/" 
+             style="color: #795548;">
+            Comparison
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/factors/" 
+             style="color: #795548;">
+            Factors
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/suggestions/" 
+             style="color: #795548;">
+            Suggestions
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/feedback/" 
+             style="color: #795548;">
+            Feedback
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/blog" 
+             style="color: #795548;">
+            Blog
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/tools/" 
+             style="color: #795548;">
+            Tools
+            
+          </a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" action="/search" method="get">
+        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search" 
+               style="border-color: #d7ccc8; background-color: #fff8e1;">
+        <button class="btn btn-outline-primary" type="submit" 
+                style="border-color: #8d6e63; color: #795548; background-color: transparent;">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <main class="container my-4">
+      
+      
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+          <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </svg>
+              Home
+          </a>
+      </li>
+      
+      
+          
+          <li class="breadcrumb-item">
+              <a href="/comparison">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                          <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                      </svg>
+                  
+                  Comparison
+              </a>
+          </li>
+      
+      
+      
+      
+          <li class="breadcrumb-item active" aria-current="page">Multiple Chart Analysis of Peer Review Methods</li>
+      
+  </ol>
+</nav>
+      
+      
+      
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold">Multiple Chart Analysis of Peer Review Methods</h1>
+            <p class="lead">Interactive multi-dimensional analysis comparing different peer review approaches through various visualization methods</p>
+            <hr class="my-4 w-25 mx-auto">
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+            
+            <ul class="nav nav-tabs mb-4" id="chartTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="radar-tab" data-bs-toggle="tab" data-bs-target="#radar-panel" type="button" role="tab" aria-controls="radar-panel" aria-selected="true">
+                        <i class="fas fa-chart-radar me-2"></i>Radar Analysis
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bar-tab" data-bs-toggle="tab" data-bs-target="#bar-panel" type="button" role="tab" aria-controls="bar-panel" aria-selected="false">
+                        <i class="fas fa-chart-bar me-2"></i>Bar Comparison
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="scatter-tab" data-bs-toggle="tab" data-bs-target="#scatter-panel" type="button" role="tab" aria-controls="scatter-panel" aria-selected="false">
+                        <i class="fas fa-braille me-2"></i>Scatter Plot
+                    </button>
+                </li>
+            </ul>
+            
+            
+            <div class="tab-content" id="chartContent">
+                
+                <div class="tab-pane fade show active" id="radar-panel" role="tabpanel" aria-labelledby="radar-tab">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3 text-primary">Multi-dimensional Comparison of Peer Review Methods</h3>
+                            <div class="chart-container" style="position: relative; height:400px;">
+                                <canvas id="radarChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top">
+                            <small class="text-muted">Data collected from 500+ peer reviews across 12 courses</small>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="tab-pane fade" id="bar-panel" role="tabpanel" aria-labelledby="bar-tab">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3 text-primary">Comparison by Assessment Type</h3>
+                            <div class="chart-container" style="position: relative; height:400px;">
+                                <canvas id="barChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top">
+                            <small class="text-muted">Bar chart showing direct comparison across evaluation dimensions</small>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="tab-pane fade" id="scatter-panel" role="tabpanel" aria-labelledby="scatter-tab">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3 text-primary">Learning Impact vs. Time Investment</h3>
+                            <div class="chart-container" style="position: relative; height:400px;">
+                                <canvas id="scatterChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top">
+                            <small class="text-muted">Each point represents a class implementation of peer review</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="content-card p-4 shadow-sm rounded mt-4">
+                <h2 id="understanding-peer-review-effectiveness-through-multiple-lenses">Understanding Peer Review Effectiveness Through Multiple Lenses</h2>
+<p>This interactive dashboard presents a <strong>multi-dimensional analysis</strong> of peer review effectiveness across different assignment types. By examining the data through multiple visualization methods, we can gain deeper insights into the strengths and limitations of each approach.</p>
+<h3 id="key-dimensions-analyzed">Key Dimensions Analyzed</h3>
+<p>Our research has identified six critical dimensions that determine the effectiveness of peer review:</p>
+<ol>
+<li><strong>Grading Consistency</strong>: How reliably different reviewers assess the same work</li>
+<li><strong>Feedback Specificity</strong>: The level of detail and actionable suggestions in reviews</li>
+<li><strong>Time Efficiency</strong>: How much time is required for effective review completion</li>
+<li><strong>Student Engagement</strong>: How actively involved students are in the review process</li>
+<li><strong>Learning Impact</strong>: The measurable effect on learning outcomes</li>
+<li><strong>Implementation Ease</strong>: How straightforward it is for instructors to set up and manage</li>
+</ol>
+<h3 id="major-findings">Major Findings</h3>
+<p>The visualizations reveal several important patterns:</p>
+<h4 id="complementary-strengths">Complementary Strengths</h4>
+<p>Coding and essay reviews excel in different areas:</p>
+<ul>
+<li><strong>Coding reviews</strong> show higher consistency (85%) and are more time-efficient (80%)</li>
+<li><strong>Essay reviews</strong> provide more specific feedback (85%) and drive higher student engagement (88%)</li>
+</ul>
+<h4 id="the-time-impact-relationship">The Time-Impact Relationship</h4>
+<p>The scatter plot reveals an interesting correlation between time investment and learning impact:</p>
+<ul>
+<li><strong>Coding reviews</strong> achieve good learning outcomes with less time investment</li>
+<li><strong>Essay reviews</strong> typically require more time but can achieve higher maximum impact</li>
+<li>There&rsquo;s a clear <strong>efficiency threshold</strong> around 60-70 minutes, beyond which additional time yields diminishing returns</li>
+</ul>
+<h4 id="implementation-considerations">Implementation Considerations</h4>
+<p>For educators considering which peer review approach to implement:</p>
+<ul>
+<li><strong>For technical courses</strong>: Coding peer reviews offer a more consistent evaluation experience with less time investment</li>
+<li><strong>For humanities/writing courses</strong>: Essay-based reviews lead to more detailed feedback and higher engagement</li>
+<li><strong>Hybrid approaches</strong>: Combining elements of both methods may provide optimal results for interdisciplinary courses</li>
+</ul>
+<h3 id="methodological-notes">Methodological Notes</h3>
+<p>Data was collected from over 500 peer reviews across 12 different courses spanning computer science, writing, and interdisciplinary subjects. Reviews were categorized and analyzed using a mixed-methods approach combining statistical analysis with qualitative coding of review content.</p>
+<p>The interactive nature of this dashboard allows educators and researchers to explore the data from multiple perspectives and draw insights relevant to their specific educational contexts.</p>
+
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="sticky-top">
+                
+                <div class="sidebar-card p-4 shadow-sm rounded bg-light mb-4">
+                    <h4 class="border-bottom pb-2 mb-3 text-primary"><i class="fas fa-info-circle me-2"></i>About This Analysis</h4>
+                    <p>This multi-dimensional analysis examines peer review effectiveness across different metrics and assessment types.</p>
+                    <div class="alert alert-light">
+                        <i class="fas fa-chart-bar text-primary me-2"></i>Switch between tabs to explore different visualization approaches.
+                    </div>
+                </div>
+                
+                
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-white border-bottom">
+                        <h5 class="mb-0 text-primary">Data Legend</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="legend-color me-2" style="width:20px; height:20px; background-color:rgba(54, 162, 235, 0.2); border:2px solid rgb(54, 162, 235); border-radius:4px;"></div>
+                                <span>Coding Assignments</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="legend-color me-2" style="width:20px; height:20px; background-color:rgba(255, 99, 132, 0.2); border:2px solid rgb(255, 99, 132); border-radius:4px;"></div>
+                                <span>Essay Assignments</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6>Dimensions Explained:</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent px-0"><strong>Grading Consistency:</strong> How closely different reviewers' assessments align</li>
+                            <li class="list-group-item bg-transparent px-0"><strong>Feedback Specificity:</strong> Level of detail in reviews</li>
+                            <li class="list-group-item bg-transparent px-0"><strong>Time Efficiency:</strong> Time required to complete review</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="card border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <h5 class="mb-3 text-primary">Download Analysis</h5>
+                        <button class="btn btn-outline-primary me-2" id="downloadPDF">
+                            <i class="fas fa-file-pdf me-1"></i> PDF Report
+                        </button>
+                        <button class="btn btn-outline-success" id="downloadCSV">
+                            <i class="fas fa-file-csv me-1"></i> Raw Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5">
+        
+<div class="comments-section mt-5">
+  <h3>Comments</h3>
+  <div id="disqus_thread"></div>
+  <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://project-bnl3amf11h.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const radarCtx = document.getElementById('radarChart').getContext('2d');
+    const radarData = {
+        labels: [
+            'Grading Consistency', 
+            'Feedback Specificity',
+            'Time Efficiency',
+            'Student Engagement',
+            'Learning Impact', 
+            'Implementation Ease'
+        ],
+        datasets: [
+            {
+                label: 'Coding Assignments',
+                data: [85, 65, 80, 72, 78, 90],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgb(54, 162, 235)',
+                pointBackgroundColor: 'rgb(54, 162, 235)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(54, 162, 235)'
+            },
+            {
+                label: 'Essay Assignments',
+                data: [65, 85, 60, 88, 82, 70],
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 99, 132)',
+                pointBackgroundColor: 'rgb(255, 99, 132)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)'
+            }
+        ]
+    };
+    
+    new Chart(radarCtx, {
+        type: 'radar',
+        data: radarData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: false
+                }
+            },
+            scales: {
+                r: {
+                    angleLines: {
+                        display: true
+                    },
+                    suggestedMin: 0,
+                    suggestedMax: 100,
+                    ticks: {
+                        stepSize: 20
+                    }
+                }
+            }
+        }
+    });
+    
+    
+    const barCtx = document.getElementById('barChart').getContext('2d');
+    const barData = {
+        labels: ['Grading Consistency', 'Feedback Specificity', 'Time Efficiency', 'Student Engagement', 'Learning Impact', 'Implementation Ease'],
+        datasets: [
+            {
+                label: 'Coding Assignments',
+                data: [85, 65, 80, 72, 78, 90],
+                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                borderColor: 'rgb(54, 162, 235)',
+                borderWidth: 1
+            },
+            {
+                label: 'Essay Assignments',
+                data: [65, 85, 60, 88, 82, 70],
+                backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                borderColor: 'rgb(255, 99, 132)',
+                borderWidth: 1
+            }
+        ]
+    };
+    
+    new Chart(barCtx, {
+        type: 'bar',
+        data: barData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100
+                }
+            }
+        }
+    });
+    
+    
+    const scatterCtx = document.getElementById('scatterChart').getContext('2d');
+    const scatterData = {
+        datasets: [
+            {
+                label: 'Coding Classes',
+                data: [
+                    {x: 45, y: 78}, {x: 60, y: 82}, {x: 35, y: 68}, 
+                    {x: 50, y: 75}, {x: 55, y: 80}, {x: 40, y: 72},
+                    {x: 65, y: 85}, {x: 70, y: 88}, {x: 30, y: 65}
+                ],
+                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                borderColor: 'rgb(54, 162, 235)',
+                pointRadius: 6
+            },
+            {
+                label: 'Essay Classes',
+                data: [
+                    {x: 75, y: 82}, {x: 65, y: 78}, {x: 80, y: 85}, 
+                    {x: 90, y: 88}, {x: 70, y: 75}, {x: 85, y: 90},
+                    {x: 60, y: 72}, {x: 95, y: 92}, {x: 72, y: 80}
+                ],
+                backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                borderColor: 'rgb(255, 99, 132)',
+                pointRadius: 6
+            }
+        ]
+    };
+    
+    new Chart(scatterCtx, {
+        type: 'scatter',
+        data: scatterData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ' - Time: ' + context.raw.x + 'min, Impact: ' + context.raw.y + '/100';
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Time Investment (minutes)'
+                    },
+                    min: 20,
+                    max: 100
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Learning Impact Score'
+                    },
+                    min: 60,
+                    max: 100
+                }
+            }
+        }
+    });
+    
+    
+    document.getElementById('downloadPDF').addEventListener('click', function() {
+        alert('PDF download functionality would be implemented here');
+    });
+    
+    document.getElementById('downloadCSV').addEventListener('click', function() {
+        alert('CSV download functionality would be implemented here');
+    });
+});
+</script>
+
+
+      
+    </main>
+
+    <footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Individual Project - University of Glasgow</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">Built with Hugo & Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

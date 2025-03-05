@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home</title>
+    <link>http://localhost:1313/feedback/</link>
+    <description>Recent content on Home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/feedback/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Effective Peer Review Feedback Examples</title>
+      <link>http://localhost:1313/feedback/effective-examples/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/feedback/effective-examples/</guid>
+      <description>&lt;h2 id=&#34;characteristics-of-effective-peer-feedback&#34;&gt;Characteristics of Effective Peer Feedback&lt;/h2&gt;&#xA;&lt;p&gt;Providing high-quality peer review feedback is a skill that can be learned and refined. This guide presents examples of effective feedback across different disciplines, highlighting the key characteristics that make feedback valuable to recipients. Use these models to improve your own feedback practices.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-makes-feedback-effective&#34;&gt;What Makes Feedback Effective?&lt;/h3&gt;&#xA;&lt;p&gt;Research on peer review consistently shows that the most helpful feedback shares several key characteristics:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Specific&lt;/strong&gt;: Points to exact elements rather than making general statements&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Actionable&lt;/strong&gt;: Offers clear, implementable suggestions for improvement&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Balanced&lt;/strong&gt;: Acknowledges strengths while identifying areas for growth&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Constructive&lt;/strong&gt;: Focuses on improvement rather than criticism&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Prioritized&lt;/strong&gt;: Addresses the most important issues rather than minor details&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Based on established criteria rather than personal preference&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Supportive&lt;/strong&gt;: Uses language that encourages rather than discourages&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The examples in this guide demonstrate these principles across different academic and professional contexts. By examining both effective and ineffective examples, you can identify patterns to apply in your own peer review practice.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

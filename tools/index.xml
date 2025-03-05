@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Peer Review Tools on Home</title>
+    <link>http://localhost:1313/tools/</link>
+    <description>Recent content in Peer Review Tools on Home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Peer Review Self-Assessment Tool</title>
+      <link>http://localhost:1313/tools/assessment/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tools/assessment/</guid>
+      <description>&lt;h2 id=&#34;evaluate-your-peer-review-approach&#34;&gt;Evaluate Your Peer Review Approach&lt;/h2&gt;&#xA;&lt;p&gt;This interactive tool helps you assess your current approach to peer review and provides targeted recommendations for improvement. The assessment evaluates several key dimensions of effective peer review:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Structure and organization&lt;/li&gt;&#xA;&lt;li&gt;Specificity of feedback&lt;/li&gt;&#xA;&lt;li&gt;Balance of positive and constructive comments&lt;/li&gt;&#xA;&lt;li&gt;Connection to learning objectives&lt;/li&gt;&#xA;&lt;li&gt;Student engagement&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Complete all questions honestly to receive the most accurate assessment of your current practices.&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;assessment-tool card shadow-sm p-4 mb-4&#34;&gt;&#xA;    &lt;h3&gt;Peer Review Self-Assessment&lt;/h3&gt;&#xA;    &lt;p&gt;Answer these questions to evaluate your current peer review practices.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

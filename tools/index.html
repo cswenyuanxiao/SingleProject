@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/lazy-load.js"></script>
+
+  <head>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/parchment-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="color: #5D4037; font-weight: 600;">
+      Home
+    </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #d7ccc8;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/comparison/" 
+             style="color: #795548;">
+            Comparison
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/factors/" 
+             style="color: #795548;">
+            Factors
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/suggestions/" 
+             style="color: #795548;">
+            Suggestions
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/feedback/" 
+             style="color: #795548;">
+            Feedback
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/blog" 
+             style="color: #795548;">
+            Blog
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" 
+             href="/tools/" 
+             style="color: #795548;">
+            Tools
+            
+          </a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" action="/search" method="get">
+        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search" 
+               style="border-color: #d7ccc8; background-color: #fff8e1;">
+        <button class="btn btn-outline-primary" type="submit" 
+                style="border-color: #8d6e63; color: #795548; background-color: transparent;">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <main class="container my-4">
+      
+      
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+          <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </svg>
+              Home
+          </a>
+      </li>
+      
+      
+          
+          <li class="breadcrumb-item">
+              <a href="/tools">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                          <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                      </svg>
+                  
+                  Tools
+              </a>
+          </li>
+      
+      
+      
+      
+  </ol>
+</nav>
+      
+      
+      
+<div class="container mt-5">
+  <h1>Peer Review Tools</h1>
+  <p>Interactive tools to help improve your peer review practices</p>
+  
+  
+  <div class="content">
+    <p>Explore our collection of interactive tools designed to help instructors and students improve their peer review practices:</p>
+<h2 id="available-tools">Available Tools</h2>
+<ul>
+<li><a href="/tools/assessment/"><strong>Peer Review Self-Assessment Tool</strong></a>: Evaluate your current approach to peer review and receive personalized recommendations for improvement.</li>
+</ul>
+
+  </div>
+  
+  
+  <div class="row mt-4">
+    
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Peer Review Self-Assessment Tool</h5>
+          <p>Evaluate your peer review practices and receive personalized recommendations</p>
+          <a href="/tools/assessment/" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+      
+    </main>
+
+    <footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Individual Project - University of Glasgow</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">Built with Hugo & Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/lazy-load.js"></script>
+
+  <head>
+	<meta name="generator" content="Hugo 0.142.0">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/parchment-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="color: #5D4037; font-weight: 600;">
+      Home
+    </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #d7ccc8;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/comparison/" 
+             style="color: #795548;">
+            Comparison
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/factors/" 
+             style="color: #795548;">
+            Factors
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/suggestions/" 
+             style="color: #795548;">
+            Suggestions
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/feedback/" 
+             style="color: #795548;">
+            Feedback
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/blog" 
+             style="color: #795548;">
+            Blog
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/tools/" 
+             style="color: #795548;">
+            Tools
+            
+          </a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" action="/search" method="get">
+        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search" 
+               style="border-color: #d7ccc8; background-color: #fff8e1;">
+        <button class="btn btn-outline-primary" type="submit" 
+                style="border-color: #8d6e63; color: #795548; background-color: transparent;">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <main class="container my-4">
+      
+      
+      
+      
+<div class="container mt-5">
+    
+    <div class="row mb-5">
+        <div class="col-12 text-center py-5 rounded shadow-sm hero-section">
+            <h1 class="display-4 fw-bold text-brown">Peer Review Research Hub</h1>
+            <p class="lead col-md-8 mx-auto text-secondary">A platform for analyzing and improving peer review effectiveness</p>
+            <hr class="my-4 w-25 mx-auto">
+        </div>
+    </div>
+
+    <div class="row">
+        
+        <div class="col-lg-8">
+            
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 h-100 border-0 transition-hover feature-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-container-primary p-3 me-3">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="mb-0"><a href="/comparison/" class="text-decoration-none text-brown">Comparison</a></h3>
+                        </div>
+                        <p class="text-secondary">Explore AI vs. human grading, coding vs. essay-based grading comparisons with interactive visualizations.</p>
+                        <div class="mt-auto">
+                            <a href="/comparison/" class="btn">Explore Data <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-4 h-100 border-0 transition-hover feature-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-container-secondary p-3 me-3">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="mb-0"><a href="/suggestions/" class="text-decoration-none text-brown">Suggestions</a></h3>
+                        </div>
+                        <p class="text-secondary">Submit your recommendations for improving peer review processes and methodologies.</p>
+                        <div class="mt-auto">
+                            <a href="/suggestions/" class="btn">Submit Ideas <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="mt-5 content-area text-brown">
+                <h2 id="welcome">Welcome!</h2>
+<p>Peer Review Research Hub is an interactive platform that explores the <strong>effectiveness of peer reviews</strong> across different types of courses and assessment formats.</p>
+<h2 id="project-background--goals">Project Background &amp; Goals</h2>
+<p>In today’s education landscape, peer review plays a crucial role in enhancing student engagement and critical thinking. However, different subjects—like <strong>computer programming</strong> vs. <strong>essay writing</strong>—may have drastically different peer review effectiveness. Meanwhile, <strong>AI-based grading systems</strong> are emerging, raising questions about how they compare with human assessments.</p>
+<p>Our project sets out to:</p>
+<ul>
+<li>Compare consistency and fairness of peer reviews in coding vs. essay tasks</li>
+<li>Evaluate AI vs. human grading results</li>
+<li>Gather suggestions to improve peer review processes</li>
+</ul>
+<p>Explore the <strong><a href="/comparison/">Comparison</a></strong> page for interactive charts and data analysis, or submit your own <strong><a href="/suggestions/">Suggestions</a></strong> to help us refine the peer review approach!</p>
+<h2 id="key-insights-preview">Key Insights (Preview)</h2>
+<ul>
+<li><strong>85%</strong> → Coding peer reviews show high consistency index</li>
+<li><strong>78%</strong> → Essay peer reviews align with instructor feedback</li>
+<li><strong>92%</strong> → AI-human agreement rate on coding tasks</li>
+</ul>
+<p>Readme-style Template</p>
+<hr>
+<h1 id="peer-review-research-hub">Peer Review Research Hub</h1>
+<p><strong>Open-Science Platform for Assessment Analytics</strong><br>
+<a href="https://gohugo.io/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Hugo-0.111.3-FF4088" alt="Hugo Version"></a><br>
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey" alt="License CC-BY-4.0"></a></p>
+<hr>
+<h2 id="-table-of-contents">📋 Table of Contents</h2>
+<ol>
+<li><a href="#-research-design">Research Design</a></li>
+<li><a href="#-tech-stack">Tech Stack</a></li>
+<li><a href="#-data-pipeline">Data Pipeline</a></li>
+<li><a href="#-get-involved">Get Involved</a></li>
+<li><a href="#-roadmap">Roadmap</a></li>
+<li><a href="#-citation">Citation</a></li>
+</ol>
+<hr>
+<h2 id="-research-design">🔬 Research Design</h2>
+<h3 id="mixed-methods-framework">Mixed-Methods Framework</h3>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD  
+A[Data Collection] --&gt; B[Quantitative Analysis]  
+A --&gt; C[Qualitative Coding]  
+B --&gt; D1[&#34;ICC Consistency Metrics&#34;]  
+B --&gt; D2[&#34;SEM Path Modeling&#34;]  
+C --&gt; D3[&#34;Thematic Analysis&#34;]  
+C --&gt; D4[&#34;Sentiment Scoring&#34;]  
+D1 --&gt; E[Cross-Disciplinary Insights]  
+D3 --&gt; E  
+</code></pre><h3 id="key-components">Key Components</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Module</th>
+          <th>Tools</th>
+          <th>Output Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Review Collection</strong></td>
+          <td>Google Forms + Firebase</td>
+          <td>520+ structured reviews</td>
+      </tr>
+      <tr>
+          <td><strong>Coding Analysis</strong></td>
+          <td>Python + NLTK</td>
+          <td>Code quality prediction models</td>
+      </tr>
+      <tr>
+          <td><strong>Essay Evaluation</strong></td>
+          <td>R + lme4</td>
+          <td>Grading bias heatmaps</td>
+      </tr>
+      <tr>
+          <td><strong>AI Benchmarking</strong></td>
+          <td>TensorFlow + sklearn</td>
+          <td>F1-score comparison matrices</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-tech-stack">🛠️ Tech Stack</h2>
+<h3 id="core-architecture">Core Architecture</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── content/               
+</span></span><span style="display:flex;"><span>├── data/                  
+</span></span><span style="display:flex;"><span>│   ├── coding_reviews.csv  
+</span></span><span style="display:flex;"><span>│   └── essay_feedback.parquet  
+</span></span><span style="display:flex;"><span>├── layouts/               
+</span></span><span style="display:flex;"><span>│   ├── comparison/        
+</span></span><span style="display:flex;"><span>│   └── shortcodes/         
+</span></span><span style="display:flex;"><span>├── static/                
+</span></span><span style="display:flex;"><span>│   ├── js/chart-init.js    
+</span></span><span style="display:flex;"><span>│   └── css/custom.scss     
+</span></span><span style="display:flex;"><span>└── config/                 
+</span></span><span style="display:flex;"><span>    ├── R/                 
+</span></span><span style="display:flex;"><span>    └── python/            
+</span></span></code></pre></div><h3 id="dependencies">Dependencies</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml </span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">module</span>]  
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/wowchemy/wowchemy-hugo-modules/netlify&#34;</span>  
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/peaceiris/hugo-mod-utterances&#34;</span>   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># (requirements.txt)  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">numpy</span>==<span style="color:#ae81ff">1.26</span>.<span style="color:#ae81ff">0</span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pandas</span>==<span style="color:#ae81ff">2.1</span>.<span style="color:#ae81ff">0</span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">scikit-learn</span>==<span style="color:#ae81ff">1.3</span>.<span style="color:#ae81ff">0</span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">tensorflow</span>==<span style="color:#ae81ff">2.15</span>.<span style="color:#ae81ff">0</span>  
+</span></span></code></pre></div><hr>
+<h2 id="-data-pipeline">📊 Data Pipeline</h2>
+<h3 id="collection-protocol">Collection Protocol</h3>
+<ol>
+<li>
+<p><strong>Ethical Approval</strong></p>
+<ul>
+<li>University IRB #2024-EDU-037</li>
+<li>Anonymized participant IDs</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Types</strong></p>
+<ul>
+<li>Structured: Rubric scores (5-point Likert)</li>
+<li>Unstructured: Feedback text + AI grading logs</li>
+</ul>
+</li>
+</ol>
+<h3 id="processing-workflow">Processing Workflow</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">preprocess_reviews</span>(df):  
+</span></span><span style="display:flex;"><span>    df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>dropna(subset<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;feedback&#39;</span>])  
+</span></span><span style="display:flex;"><span>    df[<span style="color:#e6db74">&#39;sentiment&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;feedback&#39;</span>]<span style="color:#f92672">.</span>apply(vader_analyzer)  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> df<span style="color:#f92672">.</span>to_parquet(<span style="color:#e6db74">&#39;clean_data.parquet&#39;</span>)  
+</span></span></code></pre></div><h3 id="access-policy">Access Policy</h3>
+<ul>
+<li><strong>Public Dataset</strong>: <a href="https://zenodo.org/records/xxxx" target="_blank" rel="noopener">Zenodo Archive</a></li>
+<li><strong>Sensitive Data</strong>: Contact PI via <a href="#contact">email</a></li>
+</ul>
+<hr>
+<h2 id="-get-involved">🤝 Get Involved</h2>
+<h3 id="as-a-participant">As a Participant</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> <span style="font-weight:bold">**Students**</span>:  
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">-</span> [<span style="color:#f92672">Join Survey</span>](<span style="color:#a6e22e">https://your-survey-link</span>) (15 mins)  
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">-</span> Opt-in for focus groups  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> <span style="font-weight:bold">**Educators**</span>:  
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">-</span> Contribute rubric designs  
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">-</span> Share de-identified grading data  
+</span></span></code></pre></div><h3 id="as-a-developer">As a Developer</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>git clone https://github.com/yourname/peer-review-research.git  
+</span></span><span style="display:flex;"><span>cd peer-review-research  
+</span></span><span style="display:flex;"><span>hugo server -D --disableFastRender  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 🗺️ Roadmap  </span>
+</span></span><span style="display:flex;"><span>| Quarter      | Milestone                      | Status       |  
+</span></span><span style="display:flex;"><span>|--------------|--------------------------------|--------------|  
+</span></span><span style="display:flex;"><span>| <span style="color:#ae81ff">2024</span> Q2      | Multi-institutional validation | ✅ Completed |  
+</span></span><span style="display:flex;"><span>| <span style="color:#ae81ff">2024</span> Q3      | Open-source toolkit v1.0       | 🔄 In Progress |  
+</span></span><span style="display:flex;"><span>| <span style="color:#ae81ff">2025</span> Q1      | MOOC integration pilot         | ⏳ Planned   |  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 📚 Citation  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span>bibtex  
+</span></span><span style="display:flex;"><span>@software<span style="color:#f92672">{</span>PeerReviewHub2024,  
+</span></span><span style="display:flex;"><span>  author <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>Xiao, Wenyuan<span style="color:#f92672">}</span>,  
+</span></span><span style="display:flex;"><span>  title <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>Peer Review Research Hub<span style="color:#f92672">}</span>,  
+</span></span><span style="display:flex;"><span>  year <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>2024<span style="color:#f92672">}</span>,  
+</span></span><span style="display:flex;"><span>  publisher <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>GitHub<span style="color:#f92672">}</span>,  
+</span></span><span style="display:flex;"><span>  journal <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>GitHub repository<span style="color:#f92672">}</span>,  
+</span></span><span style="display:flex;"><span>  howpublished <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#ae81ff">\u</span>rl<span style="color:#f92672">{</span>https://github.com/your-repo<span style="color:#f92672">}}</span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>  
+</span></span></code></pre></div><hr>
+<h2 id="-contact">📧 Contact</h2>
+<p>For collaboration inquiries or data access:</p>
+<ul>
+<li>📧 Email: [2715237x@student.gla.ac.uk]</li>
+<li>💬 Discussion: <a href="https://github.com/cswenyuanxiao/SingleProject/issues" target="_blank" rel="noopener">GitHub Issues</a></li>
+</ul>
+<hr>
+
+            </div>
+        </div>
+        
+        
+        <div class="col-lg-4">
+            <div class="sticky-top">
+                
+                <div class="card shadow-sm mb-4 border-0">
+                    <div class="card-header">
+                        <h4 class="mb-0">Research Topics</h4>
+                    </div>
+                    <div class="card-body">
+                        
+<div class="tag-cloud">
+  
+    
+    
+    <a href="/tags/assessment" 
+       class="tag-item"
+       style="font-size: 0.8rem;">
+      assessment <span class="badge">1</span>
+    </a>
+  
+    
+    
+    <a href="/tags/education" 
+       class="tag-item"
+       style="font-size: 0.8rem;">
+      education <span class="badge">1</span>
+    </a>
+  
+    
+    
+    <a href="/tags/feedback" 
+       class="tag-item"
+       style="font-size: 0.8rem;">
+      feedback <span class="badge">1</span>
+    </a>
+  
+    
+    
+    <a href="/tags/methodology" 
+       class="tag-item"
+       style="font-size: 0.8rem;">
+      methodology <span class="badge">1</span>
+    </a>
+  
+</div>
+
+                    </div>
+                </div>
+                
+                
+                <div class="card shadow-sm mb-4 border-0">
+                    <div class="card-header">
+                        <h4 class="mb-0">Recent Updates</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            
+                            <li class="mb-3 pb-2 border-bottom">
+                                <a href="/comparison/multidimensional/" class="text-decoration-none fw-bold text-brown">Multidimensional Comparison of Peer Review Types</a>
+                                <small class="d-block text-muted">Feb 22, 2025</small>
+                            </li>
+                            
+                            <li class="mb-3 pb-2 border-bottom">
+                                <a href="/comparison/testpage/" class="text-decoration-none fw-bold text-brown">Review Distribution by Course Type</a>
+                                <small class="d-block text-muted">Feb 18, 2025</small>
+                            </li>
+                            
+                            <li class="mb-3 pb-2 border-bottom">
+                                <a href="/comparison/ai-vs-human/" class="text-decoration-none fw-bold text-brown">AI vs Human Reviews</a>
+                                <small class="d-block text-muted">Feb 16, 2025</small>
+                            </li>
+                            
+                            <li class="mb-3 pb-2 border-bottom">
+                                <a href="/comparison/coding-vs-essay/" class="text-decoration-none fw-bold text-brown">Coding vs. Essay-based Reviews</a>
+                                <small class="d-block text-muted">Feb 16, 2025</small>
+                            </li>
+                            
+                            <li class="mb-3 pb-2 border-bottom">
+                                <a href="/factors/factor1/" class="text-decoration-none fw-bold text-brown">Factor1</a>
+                                <small class="d-block text-muted">Feb 16, 2025</small>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="card shadow-sm mb-4 border-0 alert">
+                    <div class="card-body text-center p-4">
+                        <h5 class="text-brown">Join Our Research</h5>
+                        <p class="mb-3 text-secondary">Contribute to improving peer review effectiveness across educational contexts.</p>
+                        <a href="/get-involved/" class="btn btn-primary">Get Involved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+     
+    .content-area h2 {
+        margin-top: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #D7CCC8;
+        color: #5D4037;
+    }
+    
+    .content-area ul {
+        padding-left: 1.2rem;
+    }
+    
+    .transition-hover {
+        transition: transform 0.3s ease;
+    }
+    
+    .transition-hover:hover {
+        transform: translateY(-5px);
+    }
+    
+     
+    .content-area strong {
+        color: #795548;
+    }
+
+     
+    .content-area a {
+        color: #8D6E63;
+        text-decoration: underline;
+        text-decoration-color: #D7CCC8;
+    }
+
+    .content-area a:hover {
+        color: #5D4037;
+    }
+</style>
+
+
+      
+    </main>
+
+    <footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Individual Project - University of Glasgow</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">Built with Hugo & Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

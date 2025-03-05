@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/lazy-load.js"></script>
+
+  <head>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/parchment-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="color: #5D4037; font-weight: 600;">
+      Home
+    </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #d7ccc8;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/comparison/" 
+             style="color: #795548;">
+            Comparison
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/factors/" 
+             style="color: #795548;">
+            Factors
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/suggestions/" 
+             style="color: #795548;">
+            Suggestions
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/feedback/" 
+             style="color: #795548;">
+            Feedback
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/blog" 
+             style="color: #795548;">
+            Blog
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/tools/" 
+             style="color: #795548;">
+            Tools
+            
+          </a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" action="/search" method="get">
+        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search" 
+               style="border-color: #d7ccc8; background-color: #fff8e1;">
+        <button class="btn btn-outline-primary" type="submit" 
+                style="border-color: #8d6e63; color: #795548; background-color: transparent;">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <main class="container my-4">
+      
+      
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+          <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </svg>
+              Home
+          </a>
+      </li>
+      
+      
+          
+          <li class="breadcrumb-item">
+              <a href="/comparison">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                          <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                      </svg>
+                  
+                  Comparison
+              </a>
+          </li>
+      
+      
+      
+      
+          <li class="breadcrumb-item active" aria-current="page">Peer Review Quality Over Time</li>
+      
+  </ol>
+</nav>
+      
+      
+      
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold text-serif" style="color: #5D4037;">Peer Review Quality Over Time</h1>
+            <p class="lead text-brown">Analysis of how peer review effectiveness has evolved across multiple academic terms</p>
+            <hr class="my-4 w-25 mx-auto" style="border-color: #8D6E63;">
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+            
+            <ul class="nav nav-tabs mb-4" id="chartTabs" role="tablist" style="border-bottom-color: #D7CCC8;">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="line-tab" data-bs-toggle="tab" data-bs-target="#line-panel" type="button" role="tab" aria-controls="line-panel" aria-selected="true" style="color: #5D4037; border-color: #D7CCC8;">
+                        <i class="fas fa-chart-line me-2"></i>Trend Lines
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="area-tab" data-bs-toggle="tab" data-bs-target="#area-panel" type="button" role="tab" aria-controls="area-panel" aria-selected="false" style="color: #5D4037; border-color: #D7CCC8;">
+                        <i class="fas fa-chart-area me-2"></i>Stacked Area
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="column-tab" data-bs-toggle="tab" data-bs-target="#column-panel" type="button" role="tab" aria-controls="column-panel" aria-selected="false" style="color: #5D4037; border-color: #D7CCC8;">
+                        <i class="fas fa-chart-bar me-2"></i>Comparison Bars
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="mixed-tab" data-bs-toggle="tab" data-bs-target="#mixed-panel" type="button" role="tab" aria-controls="mixed-panel" aria-selected="false" style="color: #5D4037; border-color: #D7CCC8;">
+                        <i class="fas fa-chart-pie me-2"></i>Mixed Chart
+                    </button>
+                </li>
+            </ul>
+            
+            
+            <div class="tab-content" id="chartContent">
+                
+                <div class="tab-pane fade show active" id="line-panel" role="tabpanel" aria-labelledby="line-tab">
+                    <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3" style="color: #795548;">Trend Analysis: Key Metrics Over Time</h3>
+                            <div class="chart-container" style="position: relative; height:400px;">
+                                <canvas id="lineChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer" style="background-color: #F5F5F5; border-top-color: #D7CCC8;">
+                            <small class="text-muted">Data collected across six academic terms from Fall 2021 through Spring 2024</small>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="tab-pane fade" id="area-panel" role="tabpanel" aria-labelledby="area-tab">
+                    <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3" style="color: #795548;">Cumulative Impact of Quality Factors</h3>
+                            <div class="chart-container" style="position: relative; height:400px;">
+                                <canvas id="areaChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer" style="background-color: #F5F5F5; border-top-color: #D7CCC8;">
+                            <small class="text-muted">Stacked area chart showing how different quality factors contribute to overall effectiveness</small>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="tab-pane fade" id="column-panel" role="tabpanel" aria-labelledby="column-tab">
+                    <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3" style="color: #795548;">Term-by-Term Comparison</h3>
+                            <div class="chart-container" style="position: relative; height:400px;">
+                                <canvas id="columnChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer" style="background-color: #F5F5F5; border-top-color: #D7CCC8;">
+                            <small class="text-muted">Column chart comparing key metrics across different academic terms</small>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab-pane fade" id="mixed-panel" role="tabpanel" aria-labelledby="mixed-tab">
+                    <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3" style="color: #795548;">Quality Metrics and Intervention Impact</h3>
+                            <div class="chart-container" style="position: relative; height:400px;">
+                                <canvas id="mixedChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer" style="background-color: #F5F5F5; border-top-color: #D7CCC8;">
+                            <small class="text-muted">Mixed chart showing quality metrics (bars) against completion rate (line)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="content-card p-4 shadow-sm rounded mt-4" style="background-color: #FFF8E1; border: 1px solid #EEEEEE;">
+                <h2 id="longitudinal-analysis-fall-2021---spring-2024">Longitudinal Analysis: Fall 2021 - Spring 2024</h2>
+<p>This time-series analysis examines the evolution of peer review quality over six consecutive academic terms, identifying key intervention points and their impact on overall effectiveness. By tracking multiple metrics consistently, we can clearly observe the trajectory of improvement and pinpoint which interventions yielded the greatest benefits.</p>
+<h3 id="key-metrics-tracked">Key Metrics Tracked</h3>
+<p>The following metrics were measured consistently across all terms:</p>
+<ol>
+<li>
+<p><strong>Reviewer Consistency</strong>: The degree to which different reviewers provide similar assessments for the same work. Higher consistency indicates more reliable review processes.</p>
+</li>
+<li>
+<p><strong>Feedback Quality</strong>: Measured through a combination of specificity, actionability, and constructiveness of comments.</p>
+</li>
+<li>
+<p><strong>Student Satisfaction</strong>: Self-reported satisfaction with the peer review process and perceived value of feedback received.</p>
+</li>
+<li>
+<p><strong>Instructor Alignment</strong>: The correlation between peer reviews and instructor assessments of the same work.</p>
+</li>
+<li>
+<p><strong>Completion Rate</strong>: The percentage of assigned peer reviews that were completed on time.</p>
+</li>
+</ol>
+<h3 id="major-trends-observed">Major Trends Observed</h3>
+<p>Over the six terms studied, several significant trends emerged:</p>
+<ul>
+<li>
+<p><strong>Reviewer Consistency</strong> showed the most dramatic improvement, rising from 42% in Fall 2021 to 78% in Spring 2024. This indicates that reviews have become much more reliable and standardized.</p>
+</li>
+<li>
+<p><strong>Feedback Quality</strong> improved steadily, with notable jumps following the implementation of structured rubrics in Fall 2022 and AI-assisted feedback in Fall 2023.</p>
+</li>
+<li>
+<p><strong>Student Satisfaction</strong> experienced a temporary dip in Spring 2022 but recovered strongly and reached its highest level (82%) by Spring 2024.</p>
+</li>
+<li>
+<p><strong>Instructor Alignment</strong> showed consistent improvement across all terms, suggesting better alignment between peer and expert assessment.</p>
+</li>
+<li>
+<p><strong>Completion Rate</strong> fluctuated somewhat but generally trended upward, with peaks in Fall 2022 (84%) and Fall 2023 (88%).</p>
+</li>
+</ul>
+<h3 id="impact-of-intervention-points">Impact of Intervention Points</h3>
+<p>Each term featured a specific intervention aimed at improving the peer review process:</p>
+<ul>
+<li>
+<p><strong>Spring 2022</strong>: Introduction of reviewer training programs resulted in an 11% improvement in reviewer consistency but only modest gains in other metrics.</p>
+</li>
+<li>
+<p><strong>Fall 2022</strong>: Implementation of structured review rubrics led to significant improvements across all metrics, with feedback quality increasing by 7% and completion rates jumping by 12%.</p>
+</li>
+<li>
+<p><strong>Spring 2023</strong>: Adoption of double-blind review process particularly improved instructor alignment (+6%) and student satisfaction (+4%).</p>
+</li>
+<li>
+<p><strong>Fall 2023</strong>: Integration of AI-assisted feedback tools created substantial improvements in feedback quality (+6%) and completion rates (+9%).</p>
+</li>
+<li>
+<p><strong>Spring 2024</strong>: A comprehensive approach combining all previous interventions resulted in continued improvements across all metrics.</p>
+</li>
+</ul>
+<h3 id="seasonal-variations">Seasonal Variations</h3>
+<p>Interestingly, we observed consistent patterns between fall and spring terms:</p>
+<ul>
+<li>Fall terms generally showed higher completion rates but lower student satisfaction compared to the subsequent spring terms.</li>
+<li>Reviewer consistency typically improved more dramatically in fall terms, possibly due to new training initiatives coinciding with the academic year start.</li>
+</ul>
+<h3 id="implementation-insights">Implementation Insights</h3>
+<p>Based on this longitudinal analysis, we can draw several valuable insights:</p>
+<ol>
+<li>
+<p><strong>Compounding Benefits</strong>: Each intervention built upon previous improvements, creating a compounding effect over time.</p>
+</li>
+<li>
+<p><strong>Structured Guidance</strong>: The introduction of structured rubrics in Fall 2022 appears to have been a critical turning point, significantly improving both the quality and consistency of reviews.</p>
+</li>
+<li>
+<p><strong>Technology Enhancement</strong>: AI-assisted feedback tools proved highly effective at improving both the quality and completion rate of reviews.</p>
+</li>
+<li>
+<p><strong>Comprehensive Approach</strong>: The highest overall quality was achieved in Spring 2024 when all interventions were used in combination.</p>
+</li>
+</ol>
+<h3 id="methodological-notes">Methodological Notes</h3>
+<p>Data collection involved consistent measurement techniques across all terms:</p>
+<ul>
+<li>Each term involved at least 120 students and 360+ individual peer reviews</li>
+<li>Measurements were taken using the standardized PRMQ (Peer Review Metrics Questionnaire)</li>
+<li>Consistency calculations used Cohen&rsquo;s kappa coefficient to assess inter-reviewer reliability</li>
+<li>External validation by education assessment specialists was conducted each term</li>
+</ul>
+<p>For detailed methodology and raw data, please refer to the downloadable materials.</p>
+
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="sticky-top">
+                
+                <div class="sidebar-card p-4 shadow-sm rounded mb-4" style="background-color: #F5F5DC; border: 1px solid #E8E6D9;">
+                    <h4 class="border-bottom pb-2 mb-3" style="color: #795548; border-color: #D7CCC8;"><i class="fas fa-info-circle me-2"></i>About This Analysis</h4>
+                    <p style="color: #5D4037;">This time-series analysis explores how peer review quality has evolved over time and identifies key intervention points that led to improvements.</p>
+                    <div class="alert" style="background-color: #FFF8E1; border-color: #FFE0B2; color: #795548;">
+                        <i class="fas fa-lightbulb text-brown me-2" style="color: #A1887F;"></i>Switch between tabs to explore different ways of visualizing the time-based data.
+                    </div>
+                </div>
+                
+                
+                <div class="card border-0 shadow-sm mb-4" style="background-color: #EFEBE9;">
+                    <div class="card-header" style="background-color: #F5F5DC; border-bottom-color: #D7CCC8;">
+                        <h5 class="mb-0" style="color: #795548;">Intervention Timeline</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent">
+                                <span class="badge me-2" style="background-color: #F5F5DC; color: #795548;">T1</span>
+                                <span style="color: #5D4037;">Fall 2021: Baseline measurements</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent">
+                                <span class="badge me-2" style="background-color: #F5F5DC; color: #795548;">T2</span>
+                                <span style="color: #5D4037;">Spring 2022: Reviewer training introduced</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent">
+                                <span class="badge me-2" style="background-color: #F5F5DC; color: #795548;">T3</span>
+                                <span style="color: #5D4037;">Fall 2022: Structured rubrics implemented</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent">
+                                <span class="badge me-2" style="background-color: #F5F5DC; color: #795548;">T4</span>
+                                <span style="color: #5D4037;">Spring 2023: Double-blind review process</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent">
+                                <span class="badge me-2" style="background-color: #F5F5DC; color: #795548;">T5</span>
+                                <span style="color: #5D4037;">Fall 2023: AI-assisted feedback</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent">
+                                <span class="badge me-2" style="background-color: #F5F5DC; color: #795548;">T6</span>
+                                <span style="color: #5D4037;">Spring 2024: Comprehensive approach</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="card border-0 shadow-sm text-center" style="background-color: #EFEBE9;">
+                    <div class="card-body">
+                        <h5 class="mb-3" style="color: #795548;">Download Data</h5>
+                        <button class="btn me-2" style="background-color: #F5F5DC; color: #795548; border-color: #D7CCC8;" id="downloadPDF">
+                            <i class="fas fa-file-pdf me-1"></i> Report
+                        </button>
+                        <button class="btn" style="background-color: #F5F5DC; color: #8D6E63; border-color: #D7CCC8;" id="downloadCSV">
+                            <i class="fas fa-file-csv me-1"></i> Raw Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5">
+        
+<div class="comments-section mt-5">
+  <h3>Comments</h3>
+  <div id="disqus_thread"></div>
+  <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://project-bnl3amf11h.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const terms = ['Fall 2021', 'Spring 2022', 'Fall 2022', 'Spring 2023', 'Fall 2023', 'Spring 2024'];
+    
+    
+    const colors = {
+        reviewerConsistency: {
+            line: '#795548',
+            bg: 'rgba(121, 85, 72, 0.1)',
+            area: 'rgba(121, 85, 72, 0.7)'
+        },
+        feedbackQuality: {
+            line: '#A1887F',
+            bg: 'rgba(161, 136, 127, 0.1)',
+            area: 'rgba(161, 136, 127, 0.7)'
+        },
+        studentSatisfaction: {
+            line: '#8D6E63',
+            bg: 'rgba(141, 110, 99, 0.1)',
+            area: 'rgba(141, 110, 99, 0.7)'
+        },
+        instructorAlignment: {
+            line: '#6D4C41',
+            bg: 'rgba(109, 76, 65, 0.1)',
+            area: 'rgba(109, 76, 65, 0.7)'
+        },
+        completionRate: {
+            line: '#5D4037',
+            bg: 'rgba(93, 64, 55, 0.1)',
+            area: 'rgba(93, 64, 55, 0.7)'
+        }
+    };
+    
+    
+    const lineCtx = document.getElementById('lineChart').getContext('2d');
+    const lineData = {
+        labels: terms,
+        datasets: [
+            {
+                label: 'Reviewer Consistency',
+                data: [42, 53, 61, 67, 74, 78],
+                backgroundColor: colors.reviewerConsistency.bg,
+                borderColor: colors.reviewerConsistency.line,
+                tension: 0.2,
+                pointRadius: 5,
+                pointHoverRadius: 7
+            },
+            {
+                label: 'Feedback Quality',
+                data: [55, 58, 65, 69, 75, 79],
+                backgroundColor: colors.feedbackQuality.bg,
+                borderColor: colors.feedbackQuality.line,
+                tension: 0.2,
+                pointRadius: 5,
+                pointHoverRadius: 7
+            },
+            {
+                label: 'Student Satisfaction',
+                data: [61, 58, 68, 72, 77, 82],
+                backgroundColor: colors.studentSatisfaction.bg,
+                borderColor: colors.studentSatisfaction.line,
+                tension: 0.2,
+                pointRadius: 5,
+                pointHoverRadius: 7
+            },
+            {
+                label: 'Instructor Alignment',
+                data: [48, 54, 62, 68, 71, 76],
+                backgroundColor: colors.instructorAlignment.bg,
+                borderColor: colors.instructorAlignment.line,
+                tension: 0.2,
+                pointRadius: 5,
+                pointHoverRadius: 7
+            },
+            {
+                label: 'Completion Rate',
+                data: [76, 72, 84, 79, 88, 84],
+                backgroundColor: colors.completionRate.bg,
+                borderColor: colors.completionRate.line,
+                tension: 0.2,
+                pointRadius: 5,
+                pointHoverRadius: 7
+            }
+        ]
+    };
+    
+    new Chart(lineCtx, {
+        type: 'line',
+        data: lineData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw + '%';
+                        }
+                    }
+                },
+                legend: {
+                    position: 'top',
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Percentage (%)',
+                        color: '#5D4037'
+                    },
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Academic Term',
+                        color: '#5D4037'
+                    },
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                }
+            }
+        }
+    });
+    
+    
+    const areaCtx = document.getElementById('areaChart').getContext('2d');
+    const areaData = {
+        labels: terms,
+        datasets: [
+            {
+                label: 'Reviewer Consistency',
+                data: [42, 53, 61, 67, 74, 78],
+                backgroundColor: 'rgba(121, 85, 72, 0.4)',
+                borderColor: colors.reviewerConsistency.line,
+                borderWidth: 1,
+                fill: true
+            },
+            {
+                label: 'Feedback Quality',
+                data: [55, 58, 65, 69, 75, 79],
+                backgroundColor: 'rgba(161, 136, 127, 0.4)',
+                borderColor: colors.feedbackQuality.line,
+                borderWidth: 1,
+                fill: true
+            },
+            {
+                label: 'Student Satisfaction',
+                data: [61, 58, 68, 72, 77, 82],
+                backgroundColor: 'rgba(141, 110, 99, 0.4)',
+                borderColor: colors.studentSatisfaction.line,
+                borderWidth: 1,
+                fill: true
+            }
+        ]
+    };
+    
+    new Chart(areaCtx, {
+        type: 'line',
+        data: areaData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    mode: 'index',
+                    intersect: false
+                },
+                filler: {
+                    propagate: false
+                }
+            },
+            scales: {
+                y: {
+                    stacked: true,
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Contribution Factor',
+                        color: '#5D4037'
+                    },
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                }
+            },
+            elements: {
+                line: {
+                    tension: 0.4
+                }
+            }
+        }
+    });
+    
+    
+    const columnCtx = document.getElementById('columnChart').getContext('2d');
+    const columnData = {
+        labels: terms,
+        datasets: [
+            {
+                label: 'Reviewer Consistency',
+                data: [42, 53, 61, 67, 74, 78],
+                backgroundColor: 'rgba(121, 85, 72, 0.7)',
+                borderColor: colors.reviewerConsistency.line,
+                borderWidth: 1
+            },
+            {
+                label: 'Feedback Quality',
+                data: [55, 58, 65, 69, 75, 79],
+                backgroundColor: 'rgba(161, 136, 127, 0.7)',
+                borderColor: colors.feedbackQuality.line,
+                borderWidth: 1
+            },
+            {
+                label: 'Student Satisfaction',
+                data: [61, 58, 68, 72, 77, 82],
+                backgroundColor: 'rgba(141, 110, 99, 0.7)',
+                borderColor: colors.studentSatisfaction.line,
+                borderWidth: 1
+            }
+        ]
+    };
+    
+    new Chart(columnCtx, {
+        type: 'bar',
+        data: columnData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    mode: 'index',
+                    intersect: false
+                },
+                legend: {
+                    position: 'top',
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Percentage (%)',
+                        color: '#5D4037'
+                    },
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                }
+            }
+        }
+    });
+    
+    
+    const mixedCtx = document.getElementById('mixedChart').getContext('2d');
+    const mixedData = {
+        labels: terms,
+        datasets: [
+            {
+                type: 'bar',
+                label: 'Reviewer Consistency',
+                data: [42, 53, 61, 67, 74, 78],
+                backgroundColor: 'rgba(121, 85, 72, 0.7)',
+                borderColor: colors.reviewerConsistency.line,
+                borderWidth: 1,
+                order: 2
+            },
+            {
+                type: 'bar',
+                label: 'Feedback Quality',
+                data: [55, 58, 65, 69, 75, 79],
+                backgroundColor: 'rgba(161, 136, 127, 0.7)',
+                borderColor: colors.feedbackQuality.line,
+                borderWidth: 1,
+                order: 2
+            },
+            {
+                type: 'line',
+                label: 'Completion Rate',
+                data: [76, 72, 84, 79, 88, 84],
+                backgroundColor: colors.completionRate.bg,
+                borderColor: colors.completionRate.line,
+                borderWidth: 2,
+                fill: false,
+                tension: 0.4,
+                pointRadius: 6,
+                pointHoverRadius: 8,
+                order: 1,
+                yAxisID: 'y1'
+            }
+        ]
+    };
+    
+    new Chart(mixedCtx, {
+        type: 'bar',
+        data: mixedData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    mode: 'index',
+                    intersect: false
+                },
+                legend: {
+                    position: 'top',
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Quality Metrics (%)',
+                        color: '#5D4037'
+                    },
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                },
+                y1: {
+                    beginAtZero: true,
+                    max: 100,
+                    position: 'right',
+                    grid: {
+                        drawOnChartArea: false,
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    },
+                    title: {
+                        display: true,
+                        text: 'Completion Rate (%)',
+                        color: '#5D4037'
+                    },
+                    ticks: {
+                        color: '#8D6E63'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#8D6E63'
+                    },
+                    grid: {
+                        color: 'rgba(215, 204, 200, 0.3)'
+                    }
+                }
+            }
+        }
+    });
+    
+    
+    document.getElementById('downloadPDF').addEventListener('click', function() {
+        alert('PDF download functionality would be implemented here');
+    });
+    
+    document.getElementById('downloadCSV').addEventListener('click', function() {
+        alert('CSV download functionality would be implemented here');
+    });
+});
+</script>
+
+
+      
+    </main>
+
+    <footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Individual Project - University of Glasgow</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">Built with Hugo & Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

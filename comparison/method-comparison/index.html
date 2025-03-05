@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/lazy-load.js"></script>
+
+  <head>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/parchment-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/" style="color: #5D4037; font-weight: 600;">
+      Home
+    </a>
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #d7ccc8;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/comparison/" 
+             style="color: #795548;">
+            Comparison
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/factors/" 
+             style="color: #795548;">
+            Factors
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/suggestions/" 
+             style="color: #795548;">
+            Suggestions
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/feedback/" 
+             style="color: #795548;">
+            Feedback
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/blog" 
+             style="color: #795548;">
+            Blog
+            
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" 
+             href="/tools/" 
+             style="color: #795548;">
+            Tools
+            
+          </a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" action="/search" method="get">
+        <input class="form-control me-2" type="search" name="q" placeholder="Search..." aria-label="Search" 
+               style="border-color: #d7ccc8; background-color: #fff8e1;">
+        <button class="btn btn-outline-primary" type="submit" 
+                style="border-color: #8d6e63; color: #795548; background-color: transparent;">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <main class="container my-4">
+      
+      
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+          <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </svg>
+              Home
+          </a>
+      </li>
+      
+      
+          
+          <li class="breadcrumb-item">
+              <a href="/comparison">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                          <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                      </svg>
+                  
+                  Comparison
+              </a>
+          </li>
+      
+      
+      
+      
+          <li class="breadcrumb-item active" aria-current="page">Comparing Peer Review Methodologies</li>
+      
+  </ol>
+</nav>
+      
+      
+      
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold text-serif" style="color: #5D4037;">Comparing Peer Review Methodologies</h1>
+            <p class="lead text-brown">A comprehensive analysis of five different peer review approaches and their effectiveness in various educational contexts</p>
+            <hr class="my-4 w-25 mx-auto" style="border-color: #8D6E63;">
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+            
+            <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                <div class="card-body p-4">
+                    <h3 class="h5 mb-3" style="color: #795548;">Comparative Analysis: Methods Effectiveness</h3>
+                    <div class="chart-container" style="position: relative; height:450px;">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+                <div class="card-footer" style="background-color: #F5F5F5; border-top-color: #D7CCC8;">
+                    <small class="text-muted">Radar chart comparison of five peer review methodologies across six key dimensions</small>
+                </div>
+            </div>
+            
+            
+            <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                <div class="card-header" style="background-color: #F5F5DC; border-bottom-color: #D7CCC8;">
+                    <h3 class="h5 mb-0" style="color: #795548;">Method Rankings by Dimension</h3>
+                </div>
+                <div class="card-body p-4">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead style="border-bottom-color: #D7CCC8;">
+                                <tr>
+                                    <th scope="col" style="border-bottom-color: #D7CCC8; color: #5D4037;">Dimension</th>
+                                    <th scope="col" style="border-bottom-color: #D7CCC8; color: #5D4037;">Top Method</th>
+                                    <th scope="col" style="border-bottom-color: #D7CCC8; color: #5D4037;">Runner-up</th>
+                                    <th scope="col" style="border-bottom-color: #D7CCC8; color: #5D4037;">Score Range</th>
+                                    <th scope="col" style="border-bottom-color: #D7CCC8; color: #5D4037;">Significance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="color: #5D4037;"><strong>Feedback Quality</strong></td>
+                                    <td>Rubric-Based</td>
+                                    <td>AI-Assisted</td>
+                                    <td>8.7 - 5.2</td>
+                                    <td><span class="badge" style="background-color: #F5F5DC; color: #795548;">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #5D4037;"><strong>Time Efficiency</strong></td>
+                                    <td>AI-Assisted</td>
+                                    <td>Minimal</td>
+                                    <td>9.2 - 5.6</td>
+                                    <td><span class="badge" style="background-color: #F5F5DC; color: #795548;">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #5D4037;"><strong>Reviewer Consistency</strong></td>
+                                    <td>Rubric-Based</td>
+                                    <td>AI-Assisted</td>
+                                    <td>8.9 - 5.8</td>
+                                    <td><span class="badge" style="background-color: #F5F5DC; color: #795548;">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #5D4037;"><strong>Student Satisfaction</strong></td>
+                                    <td>Double-Blind</td>
+                                    <td>Rubric-Based</td>
+                                    <td>8.2 - 6.4</td>
+                                    <td><span class="badge" style="background-color: #F5F5DC; color: #795548;">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #5D4037;"><strong>Implementation Cost</strong></td>
+                                    <td>Minimal</td>
+                                    <td>Open-Ended</td>
+                                    <td>9.1 - 6.2</td>
+                                    <td><span class="badge" style="background-color: #F5F5DC; color: #795548;">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #5D4037;"><strong>Learning Outcomes</strong></td>
+                                    <td>Rubric-Based</td>
+                                    <td>Double-Blind</td>
+                                    <td>8.5 - 6.7</td>
+                                    <td><span class="badge" style="background-color: #F5F5DC; color: #795548;">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                <div class="card-header" style="background-color: #F5F5DC; border-bottom-color: #D7CCC8;">
+                    <h3 class="h5 mb-0" style="color: #795548;">Method Compatibility Matrix</h3>
+                </div>
+                <div class="card-body p-4">
+                    <div class="chart-container" style="position: relative; height:400px;">
+                        <canvas id="heatmapChart"></canvas>
+                    </div>
+                    <div class="mt-3 small text-muted">
+                        <p class="mb-0">Color intensity represents the synergy level when methods are combined. Darker colors indicate higher compatibility.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="card shadow-sm border-0 mb-4" style="background-color: #EFEBE9; border-color: #D7CCC8;">
+                <div class="card-header" style="background-color: #F5F5DC; border-bottom-color: #D7CCC8;">
+                    <h3 class="h5 mb-0" style="color: #795548;">Contextual Performance</h3>
+                </div>
+                <div class="card-body p-4">
+                    <div class="chart-container" style="position: relative; height:400px;">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <div class="card-footer" style="background-color: #F5F5F5; border-top-color: #D7CCC8;">
+                    <small class="text-muted">Overall effectiveness score of each method across different educational contexts</small>
+                </div>
+            </div>
+            
+            
+            <div class="content-card p-4 shadow-sm rounded mt-4" style="background-color: #FFF8E1; border: 1px solid #EEEEEE;">
+                <h2 id="multi-method-comparison-analysis">Multi-Method Comparison Analysis</h2>
+<p>This comparative study examines the relative effectiveness of five distinct peer review methodologies across multiple dimensions. By analyzing their performance in various educational contexts, we can identify which approaches work best for specific learning goals and institutional environments.</p>
+<h3 id="key-methodologies-evaluated">Key Methodologies Evaluated</h3>
+<p>Our research investigated the following peer review methods:</p>
+<ol>
+<li>
+<p><strong>Open-Ended Review</strong>: The traditional approach allowing reviewers to provide feedback in their own format without specific structure or guidance. Reviewers are free to comment on any aspects they find relevant.</p>
+</li>
+<li>
+<p><strong>Rubric-Based Review</strong>: A structured approach where reviewers evaluate work against specific criteria using detailed rubrics. Each criterion may have descriptors and point values to guide assessment.</p>
+</li>
+<li>
+<p><strong>Double-Blind Review</strong>: An anonymous review process where neither the author nor the reviewer knows the other&rsquo;s identity, designed to reduce bias and promote objective assessment.</p>
+</li>
+<li>
+<p><strong>AI-Assisted Review</strong>: A technology-enhanced approach that provides reviewers with AI-generated prompts, suggestions for improvement areas, and automated checks for review completeness.</p>
+</li>
+<li>
+<p><strong>Minimal Review</strong>: A streamlined approach focusing on quick evaluations using checkboxes, short comments, and overall ratings, designed to maximize efficiency.</p>
+</li>
+</ol>
+<h3 id="dimensional-performance-analysis">Dimensional Performance Analysis</h3>
+<p>Our research evaluated each methodology across six critical dimensions:</p>
+<h4 id="feedback-quality">Feedback Quality</h4>
+<p>The specificity, actionability, and constructiveness of feedback received the highest scores in <strong>Rubric-Based Review</strong> (8.7/10), followed closely by <strong>AI-Assisted Review</strong> (8.4/10). The structured nature of rubrics helps reviewers provide targeted feedback on specific aspects, while AI assistance helps identify areas that might otherwise be overlooked.</p>
+<p><strong>Minimal Review</strong> scored lowest (5.2/10) in this dimension, as its streamlined nature often results in superficial feedback lacking actionable insights.</p>
+<h4 id="time-efficiency">Time Efficiency</h4>
+<p><strong>AI-Assisted Review</strong> demonstrated superior performance in time efficiency (9.2/10), reducing average review time by 47% compared to open-ended approaches. The technology scaffolding helps reviewers focus their efforts and complete reviews more quickly.</p>
+<p><strong>Double-Blind Review</strong> scored lowest in efficiency (6.2/10) due to the administrative overhead of anonymizing submissions and managing the blind review process.</p>
+<h4 id="reviewer-consistency">Reviewer Consistency</h4>
+<p><strong>Rubric-Based Review</strong> excelled in promoting consistency between different reviewers (8.9/10), with inter-rater reliability scores significantly higher than other methods. The clear evaluation criteria create a common framework for assessment.</p>
+<p><strong>Open-Ended Review</strong> showed the highest variability between reviewers (5.8/10), with significant differences in focus areas and assessment standards.</p>
+<h4 id="student-satisfaction">Student Satisfaction</h4>
+<p><strong>Double-Blind Review</strong> received the highest satisfaction ratings from students (8.2/10), who reported greater confidence in the fairness of the feedback. The perception of reduced bias contributed significantly to this positive reception.</p>
+<p>Interestingly, <strong>Minimal Review</strong> and <strong>Open-Ended Review</strong> both scored relatively poorly (6.4/10), though for different reasons—minimal reviews were seen as too superficial, while open-ended reviews were often perceived as inconsistent.</p>
+<h4 id="implementation-cost">Implementation Cost</h4>
+<p><strong>Minimal Review</strong> and <strong>Open-Ended Review</strong> were the most economical to implement (9.1/10 and 8.2/10 respectively), requiring minimal instructor preparation or technology infrastructure.</p>
+<p><strong>AI-Assisted Review</strong> had the highest implementation costs (6.2/10), reflecting the technology investment and integration requirements.</p>
+<h4 id="learning-outcomes">Learning Outcomes</h4>
+<p>When measuring impact on student learning and skill development, <strong>Rubric-Based Review</strong> produced the strongest results (8.5/10), particularly in helping students understand quality standards and self-assess their work.</p>
+<p><strong>Double-Blind Review</strong> also performed well (8.3/10), especially in disciplines where objective assessment is highly valued.</p>
+<h3 id="contextual-considerations">Contextual Considerations</h3>
+<p>The effectiveness of each method varied significantly across different educational contexts:</p>
+<ul>
+<li>
+<p><strong>Undergraduate Courses</strong>: Rubric-based approaches were most effective (8.9/10), providing the scaffolding that less experienced reviewers need.</p>
+</li>
+<li>
+<p><strong>Graduate Seminars</strong>: Both AI-Assisted and Rubric-Based methods performed well (8.7/10), with AI assistance particularly valuable for interdisciplinary programs.</p>
+</li>
+<li>
+<p><strong>Professional Development</strong>: AI-Assisted methods showed superior results (9.1/10), especially when combined with industry-specific evaluation criteria.</p>
+</li>
+</ul>
+<h3 id="method-compatibility">Method Compatibility</h3>
+<p>Our compatibility matrix reveals interesting insights about combining different approaches:</p>
+<ul>
+<li><strong>Highest Compatibility</strong>: Rubric-Based + AI-Assisted (90% compatibility)</li>
+<li><strong>Lowest Compatibility</strong>: Open-Ended + Minimal (30% compatibility)</li>
+</ul>
+<p>Strategic combinations can address weaknesses of individual methods. For example, enhancing Rubric-Based reviews with AI assistance creates a powerful approach that maintains structure while improving efficiency and coverage.</p>
+<h3 id="implementation-recommendations">Implementation Recommendations</h3>
+<p>Based on our findings, we recommend:</p>
+<ol>
+<li>
+<p><strong>For Large Undergraduate Courses</strong>: Implement Rubric-Based reviews, potentially with AI assistance for efficiency</p>
+</li>
+<li>
+<p><strong>For Upper-Level or Graduate Seminars</strong>: Consider Double-Blind reviews using structured rubrics</p>
+</li>
+<li>
+<p><strong>For Quick Formative Assessment</strong>: Use Minimal reviews for early drafts, followed by more comprehensive methods for final submissions</p>
+</li>
+<li>
+<p><strong>For Professional Education</strong>: Prioritize AI-Assisted methods that can incorporate industry standards</p>
+</li>
+<li>
+<p><strong>For Interdisciplinary Contexts</strong>: Combine Double-Blind approaches with AI assistance to ensure both fairness and comprehensive feedback</p>
+</li>
+</ol>
+<h3 id="methodological-notes">Methodological Notes</h3>
+<p>This analysis is based on a comprehensive three-year study involving:</p>
+<ul>
+<li>1,200+ students across 7 institutions</li>
+<li>5,400+ individual peer reviews analyzed</li>
+<li>Controlled experiments comparing methods within the same courses</li>
+<li>Mixed-methods assessment including quantitative metrics and qualitative interviews</li>
+<li>Statistical significance testing for all comparative findings</li>
+</ul>
+<p>For complete methodology details, instrument descriptions, and raw data, please refer to the downloadable resources.</p>
+
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="sticky-top">
+                
+                <div class="sidebar-card p-4 shadow-sm rounded mb-4" style="background-color: #F5F5DC; border: 1px solid #E8E6D9;">
+                    <h4 class="border-bottom pb-2 mb-3" style="color: #795548; border-color: #D7CCC8;"><i class="fas fa-clipboard-list me-2"></i>Methods Compared</h4>
+                    <div class="accordion" id="methodsAccordion">
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <span class="text-primary">Open-Ended</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#methodsAccordion">
+                                <div class="accordion-body pt-0">
+                                    Traditional free-form peer review with minimal guidance. Reviewers provide general feedback based on their understanding of quality.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="text-primary">Rubric-Based</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#methodsAccordion">
+                                <div class="accordion-body pt-0">
+                                    Structured review using detailed rubrics with specific criteria and scoring guidelines to guide reviewer feedback.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="text-primary">Double-Blind</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#methodsAccordion">
+                                <div class="accordion-body pt-0">
+                                    Anonymous review where neither the author nor the reviewer knows the other's identity, reducing bias in assessment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="text-primary">AI-Assisted</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#methodsAccordion">
+                                <div class="accordion-body pt-0">
+                                    Technology-enhanced peer review using AI to suggest feedback points and identify areas needing attention.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 bg-transparent">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span class="text-primary">Minimal</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#methodsAccordion">
+                                <div class="accordion-body pt-0">
+                                    Streamlined approach with quick checkbox evaluations and minimal written feedback, optimized for efficiency.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="card border-0 shadow-sm mb-4" style="background-color: #EFEBE9;">
+                    <div class="card-header" style="background-color: #F5F5DC; border-bottom-color: #D7CCC8;">
+                        <h5 class="mb-0" style="color: #795548;">Research Approach</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="small mb-3">This comparative analysis was conducted across multiple institutions with consistent testing parameters:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent small">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>5 distinct peer review methods</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent small">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>1,200+ students participating</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent small">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>3 distinct educational contexts</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent small">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>6 performance dimensions measured</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 bg-transparent small">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Statistical significance testing applied</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="card border-0 shadow-sm text-center" style="background-color: #EFEBE9;">
+                    <div class="card-body">
+                        <h5 class="mb-3" style="color: #795548;">Download Data</h5>
+                        <button class="btn btn-outline-primary me-2" style="background-color: #F5F5DC; color: #795548; border-color: #D7CCC8;" id="downloadReport">
+                            <i class="fas fa-file-pdf me-1"></i> Full Report
+                        </button>
+                        <button class="btn btn-outline-success" style="background-color: #F5F5DC; color: #8D6E63; border-color: #D7CCC8;" id="downloadData">
+                            <i class="fas fa-table me-1"></i> Comparison Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5">
+        
+<div class="comments-section mt-5">
+  <h3>Comments</h3>
+  <div id="disqus_thread"></div>
+  <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://project-bnl3amf11h.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const methodLabels = ['Open-Ended', 'Rubric-Based', 'Double-Blind', 'AI-Assisted', 'Minimal'];
+    const dimensions = ['Feedback Quality', 'Time Efficiency', 'Reviewer Consistency', 'Student Satisfaction', 'Implementation Cost', 'Learning Outcomes'];
+    const colors = {
+        openEnded: {
+            base: 'rgba(121, 85, 72, 0.7)',
+            border: 'rgb(121, 85, 72)',
+            light: 'rgba(121, 85, 72, 0.2)'
+        },
+        rubricBased: {
+            base: 'rgba(161, 136, 127, 0.7)',
+            border: 'rgb(161, 136, 127)',
+            light: 'rgba(161, 136, 127, 0.2)'
+        },
+        doubleBlind: {
+            base: 'rgba(141, 110, 99, 0.7)',
+            border: 'rgb(141, 110, 99)',
+            light: 'rgba(141, 110, 99, 0.2)'
+        },
+        aiAssisted: {
+            base: 'rgba(93, 64, 55, 0.7)',
+            border: 'rgb(93, 64, 55)',
+            light: 'rgba(93, 64, 55, 0.2)'
+        },
+        minimal: {
+            base: 'rgba(188, 170, 164, 0.7)',
+            border: 'rgb(188, 170, 164)',
+            light: 'rgba(188, 170, 164, 0.2)'
+        }
+    };
+    
+    
+    const radarCtx = document.getElementById('radarChart').getContext('2d');
+    const radarData = {
+        labels: dimensions,
+        datasets: [
+            {
+                label: 'Open-Ended',
+                data: [6.2, 6.5, 5.8, 6.8, 8.2, 7.4],
+                backgroundColor: colors.openEnded.light,
+                borderColor: colors.openEnded.border,
+                borderWidth: 2,
+                pointBackgroundColor: colors.openEnded.border,
+                pointRadius: 4
+            },
+            {
+                label: 'Rubric-Based',
+                data: [8.7, 6.8, 8.9, 7.6, 7.3, 8.5],
+                backgroundColor: colors.rubricBased.light,
+                borderColor: colors.rubricBased.border,
+                borderWidth: 2,
+                pointBackgroundColor: colors.rubricBased.border,
+                pointRadius: 4
+            },
+            {
+                label: 'Double-Blind',
+                data: [7.2, 6.2, 7.9, 8.2, 6.5, 8.3],
+                backgroundColor: colors.doubleBlind.light,
+                borderColor: colors.doubleBlind.border,
+                borderWidth: 2,
+                pointBackgroundColor: colors.doubleBlind.border,
+                pointRadius: 4
+            },
+            {
+                label: 'AI-Assisted',
+                data: [8.4, 9.2, 7.5, 7.9, 6.2, 7.8],
+                backgroundColor: colors.aiAssisted.light,
+                borderColor: colors.aiAssisted.border,
+                borderWidth: 2,
+                pointBackgroundColor: colors.aiAssisted.border,
+                pointRadius: 4
+            },
+            {
+                label: 'Minimal',
+                data: [5.2, 7.8, 6.4, 6.4, 9.1, 6.7],
+                backgroundColor: colors.minimal.light,
+                borderColor: colors.minimal.border,
+                borderWidth: 2,
+                pointBackgroundColor: colors.minimal.border,
+                pointRadius: 4
+            }
+        ]
+    };
+    
+    new Chart(radarCtx, {
+        type: 'radar',
+        data: radarData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                r: {
+                    angleLines: {
+                        display: true
+                    },
+                    beginAtZero: true,
+                    suggestedMin: 0,
+                    suggestedMax: 10,
+                    ticks: {
+                        stepSize: 2
+                    }
+                }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw + '/10';
+                        }
+                    }
+                },
+                legend: {
+                    position: 'top'
+                }
+            }
+        }
+    });
+    
+    
+    const heatCtx = document.getElementById('heatmapChart').getContext('2d');
+    const heatmapData = {
+        datasets: [{
+            data: [
+                { x: 'Open-Ended', y: 'Open-Ended', v: 1.0 },
+                { x: 'Open-Ended', y: 'Rubric-Based', v: 0.6 },
+                { x: 'Open-Ended', y: 'Double-Blind', v: 0.7 },
+                { x: 'Open-Ended', y: 'AI-Assisted', v: 0.5 },
+                { x: 'Open-Ended', y: 'Minimal', v: 0.3 },
+                
+                { x: 'Rubric-Based', y: 'Open-Ended', v: 0.6 },
+                { x: 'Rubric-Based', y: 'Rubric-Based', v: 1.0 },
+                { x: 'Rubric-Based', y: 'Double-Blind', v: 0.8 },
+                { x: 'Rubric-Based', y: 'AI-Assisted', v: 0.9 },
+                { x: 'Rubric-Based', y: 'Minimal', v: 0.5 },
+                
+                { x: 'Double-Blind', y: 'Open-Ended', v: 0.7 },
+                { x: 'Double-Blind', y: 'Rubric-Based', v: 0.8 },
+                { x: 'Double-Blind', y: 'Double-Blind', v: 1.0 },
+                { x: 'Double-Blind', y: 'AI-Assisted', v: 0.7 },
+                { x: 'Double-Blind', y: 'Minimal', v: 0.4 },
+                
+                { x: 'AI-Assisted', y: 'Open-Ended', v: 0.5 },
+                { x: 'AI-Assisted', y: 'Rubric-Based', v: 0.9 },
+                { x: 'AI-Assisted', y: 'Double-Blind', v: 0.7 },
+                { x: 'AI-Assisted', y: 'AI-Assisted', v: 1.0 },
+                { x: 'AI-Assisted', y: 'Minimal', v: 0.6 },
+                
+                { x: 'Minimal', y: 'Open-Ended', v: 0.3 },
+                { x: 'Minimal', y: 'Rubric-Based', v: 0.5 },
+                { x: 'Minimal', y: 'Double-Blind', v: 0.4 },
+                { x: 'Minimal', y: 'AI-Assisted', v: 0.6 },
+                { x: 'Minimal', y: 'Minimal', v: 1.0 }
+            ],
+            backgroundColor: ({ raw }) => {
+                const value = raw.v || 0;
+                return `rgba(121, 85, 72, ${value})`;
+            },
+            borderWidth: 1,
+            borderColor: 'rgba(215, 204, 200, 0.5)',
+            width: ({ chart }) => (chart.chartArea || {}).width / 5 - 1,
+            height: ({ chart }) => (chart.chartArea || {}).height / 5 - 1
+        }]
+    };
+
+    
+    new Chart(heatCtx, {
+        type: 'matrix',
+        data: heatmapData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        title: () => null,
+                        label: (context) => {
+                            const data = context.raw;
+                            return [
+                                `${data.x} + ${data.y}`,
+                                `Compatibility: ${Math.round(data.v * 100)}%`
+                            ];
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    type: 'category',
+                    labels: methodLabels,
+                    offset: true,
+                    ticks: {
+                        display: true
+                    },
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                    type: 'category',
+                    labels: methodLabels,
+                    offset: true,
+                    ticks: {
+                        display: true
+                    },
+                    grid: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+    
+    
+    const barCtx = document.getElementById('barChart').getContext('2d');
+    const barData = {
+        labels: methodLabels,
+        datasets: [
+            {
+                label: 'Undergraduate Courses',
+                data: [7.4, 8.9, 7.6, 8.2, 7.8],
+                backgroundColor: 'rgba(121, 85, 72, 0.7)',
+                borderColor: 'rgb(121, 85, 72)',
+                borderWidth: 1
+            },
+            {
+                label: 'Graduate Seminars',
+                data: [6.8, 8.7, 8.5, 8.7, 6.2],
+                backgroundColor: 'rgba(161, 136, 127, 0.7)',
+                borderColor: 'rgb(161, 136, 127)',
+                borderWidth: 1
+            },
+            {
+                label: 'Professional Development',
+                data: [5.9, 8.2, 8.1, 9.1, 7.4],
+                backgroundColor: 'rgba(141, 110, 99, 0.7)',
+                borderColor: 'rgb(141, 110, 99)',
+                borderWidth: 1
+            }
+        ]
+    };
+    
+    new Chart(barCtx, {
+        type: 'bar',
+        data: barData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    mode: 'index',
+                    intersect: false
+                },
+                legend: {
+                    position: 'top',
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 10,
+                    title: {
+                        display: true,
+                        text: 'Effectiveness Score (0-10)'
+                    }
+                }
+            }
+        }
+    });
+    
+    
+    document.getElementById('downloadReport').addEventListener('click', function() {
+        alert('Full report download functionality would be implemented here');
+    });
+    
+    document.getElementById('downloadData').addEventListener('click', function() {
+        alert('Comparison data download functionality would be implemented here');
+    });
+});
+</script>
+
+
+      
+    </main>
+
+    <footer class="bg-dark text-light mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Individual Project - University of Glasgow</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">Built with Hugo & Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

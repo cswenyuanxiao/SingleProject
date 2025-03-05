@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examples on Home</title>
+    <link>http://localhost:1313/examples/</link>
+    <description>Recent content in Examples on Home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/examples/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>羊皮纸主题风格演示</title>
+      <link>http://localhost:1313/examples/parchment-theme-demo/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/examples/parchment-theme-demo/</guid>
+      <description>&lt;p&gt;这个页面展示了网站的羊皮纸主题设计，包含各种UI元素和组件的样式展示。查看标题、卡片、按钮、表格、警告框等组件在羊皮纸主题下的样式表现。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

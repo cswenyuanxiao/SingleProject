@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Methodology on Home</title>
+    <link>http://localhost:1313/tags/methodology/</link>
+    <description>Recent content in Methodology on Home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/methodology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding vs. Essay-based Reviews</title>
+      <link>http://localhost:1313/comparison/coding-vs-essay/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/coding-vs-essay/</guid>
+      <description>&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Coding reviews&lt;/strong&gt; tend to have &lt;strong&gt;higher consistency&lt;/strong&gt; in grading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Essay reviews&lt;/strong&gt; show &lt;strong&gt;greater variation&lt;/strong&gt; in scores.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;future-recommendations&#34;&gt;Future Recommendations&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Improve &lt;strong&gt;essay review rubrics&lt;/strong&gt; to ensure grading consistency.&lt;/li&gt;&#xA;&lt;li&gt;Introduce &lt;strong&gt;peer discussion&lt;/strong&gt; for essay reviews.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

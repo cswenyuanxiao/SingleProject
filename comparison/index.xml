@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comparison on Home</title>
+    <link>http://localhost:1313/comparison/</link>
+    <description>Recent content in Comparison on Home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/comparison/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multidimensional Comparison of Peer Review Types</title>
+      <link>http://localhost:1313/comparison/multidimensional/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/multidimensional/</guid>
+      <description>&lt;h2 id=&#34;understanding-the-full-picture&#34;&gt;Understanding the Full Picture&lt;/h2&gt;&#xA;&lt;p&gt;Peer review effectiveness can&amp;rsquo;t be measured along a single dimension. This radar chart visualizes how coding and essay-based peer reviews compare across six key dimensions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Grading Consistency&lt;/strong&gt;: How closely different reviewers&amp;rsquo; assessments align when evaluating the same work&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Feedback Specificity&lt;/strong&gt;: The level of detail and actionable suggestions in reviews&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Time Efficiency&lt;/strong&gt;: How much time is required for effective review completion&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Student Engagement&lt;/strong&gt;: How actively involved students are in the review process&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Learning Impact&lt;/strong&gt;: The measurable effect on learning outcomes&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Implementation Ease&lt;/strong&gt;: How straightforward it is for instructors to set up and manage&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;key-insights&#34;&gt;Key Insights&lt;/h3&gt;&#xA;&lt;p&gt;This visualization reveals several important findings:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Review Distribution by Course Type</title>
+      <link>http://localhost:1313/comparison/testpage/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/testpage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI vs Human Reviews</title>
+      <link>http://localhost:1313/comparison/ai-vs-human/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/ai-vs-human/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coding vs. Essay-based Reviews</title>
+      <link>http://localhost:1313/comparison/coding-vs-essay/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/coding-vs-essay/</guid>
+      <description>&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Coding reviews&lt;/strong&gt; tend to have &lt;strong&gt;higher consistency&lt;/strong&gt; in grading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Essay reviews&lt;/strong&gt; show &lt;strong&gt;greater variation&lt;/strong&gt; in scores.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;future-recommendations&#34;&gt;Future Recommendations&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Improve &lt;strong&gt;essay review rubrics&lt;/strong&gt; to ensure grading consistency.&lt;/li&gt;&#xA;&lt;li&gt;Introduce &lt;strong&gt;peer discussion&lt;/strong&gt; for essay reviews.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Peer Review Quality Over Time</title>
+      <link>http://localhost:1313/comparison/time-series-analysis/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/time-series-analysis/</guid>
+      <description>&lt;h2 id=&#34;longitudinal-analysis-fall-2021---spring-2024&#34;&gt;Longitudinal Analysis: Fall 2021 - Spring 2024&lt;/h2&gt;&#xA;&lt;p&gt;This time-series analysis examines the evolution of peer review quality over six consecutive academic terms, identifying key intervention points and their impact on overall effectiveness. By tracking multiple metrics consistently, we can clearly observe the trajectory of improvement and pinpoint which interventions yielded the greatest benefits.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-metrics-tracked&#34;&gt;Key Metrics Tracked&lt;/h3&gt;&#xA;&lt;p&gt;The following metrics were measured consistently across all terms:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Reviewer Consistency&lt;/strong&gt;: The degree to which different reviewers provide similar assessments for the same work. Higher consistency indicates more reliable review processes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multiple Chart Analysis of Peer Review Methods</title>
+      <link>http://localhost:1313/comparison/multi-analysis/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/multi-analysis/</guid>
+      <description>&lt;h2 id=&#34;understanding-peer-review-effectiveness-through-multiple-lenses&#34;&gt;Understanding Peer Review Effectiveness Through Multiple Lenses&lt;/h2&gt;&#xA;&lt;p&gt;This interactive dashboard presents a &lt;strong&gt;multi-dimensional analysis&lt;/strong&gt; of peer review effectiveness across different assignment types. By examining the data through multiple visualization methods, we can gain deeper insights into the strengths and limitations of each approach.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-dimensions-analyzed&#34;&gt;Key Dimensions Analyzed&lt;/h3&gt;&#xA;&lt;p&gt;Our research has identified six critical dimensions that determine the effectiveness of peer review:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Grading Consistency&lt;/strong&gt;: How reliably different reviewers assess the same work&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Feedback Specificity&lt;/strong&gt;: The level of detail and actionable suggestions in reviews&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Time Efficiency&lt;/strong&gt;: How much time is required for effective review completion&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Student Engagement&lt;/strong&gt;: How actively involved students are in the review process&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Learning Impact&lt;/strong&gt;: The measurable effect on learning outcomes&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Implementation Ease&lt;/strong&gt;: How straightforward it is for instructors to set up and manage&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;major-findings&#34;&gt;Major Findings&lt;/h3&gt;&#xA;&lt;p&gt;The visualizations reveal several important patterns:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Comparing Peer Review Methodologies</title>
+      <link>http://localhost:1313/comparison/method-comparison/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comparison/method-comparison/</guid>
+      <description>&lt;h2 id=&#34;multi-method-comparison-analysis&#34;&gt;Multi-Method Comparison Analysis&lt;/h2&gt;&#xA;&lt;p&gt;This comparative study examines the relative effectiveness of five distinct peer review methodologies across multiple dimensions. By analyzing their performance in various educational contexts, we can identify which approaches work best for specific learning goals and institutional environments.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-methodologies-evaluated&#34;&gt;Key Methodologies Evaluated&lt;/h3&gt;&#xA;&lt;p&gt;Our research investigated the following peer review methods:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Open-Ended Review&lt;/strong&gt;: The traditional approach allowing reviewers to provide feedback in their own format without specific structure or guidance. Reviewers are free to comment on any aspects they find relevant.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
