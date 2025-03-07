@@ -1,15 +1,17 @@
 [build]
-  # 默认发布目录
-  publish = "quickstart/public"
-  # Hugo 构建命令
-  command = "cd quickstart && npm install hugo-installer -g && hugo"
+  # 直接从顶级目录发布
+  publish = "public"
+  # 使用顶级目录的构建命令
+  command = "hugo --minify"
 
 [build.environment]
   # 设置 Hugo 版本
   HUGO_VERSION = "0.142.0"
   # 启用 Hugo 扩展版
   HUGO_ENV = "production"
+  # 设置 Node 版本
+  NODE_VERSION = "16"
 
-[[plugins]]
-  # 安装 Hugo 插件
-  package = "@netlify/plugin-hugo" 
+# 禁用 Hugo 插件，使用 Netlify 内置的 Hugo
+# [[plugins]]
+#   package = "@netlify/plugin-hugo" 

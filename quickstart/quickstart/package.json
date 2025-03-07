@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "build": "hugo",
-    "postinstall": "npm install hugo-installer -g"
+    "build": "hugo --minify",
+    "start": "hugo server"
   },
   "devDependencies": {
     "hugo-installer": "^4.0.1"
+  },
+  "dependencies": {
   }
 } 
