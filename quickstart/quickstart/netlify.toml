@@ -1,15 +1,18 @@
 [build]
-  
+  # 发布目录
   publish = "public"
   
+  # 构建命令
   command = "hugo --minify"
 
 [build.environment]
-
+  # Hugo 版本
   HUGO_VERSION = "0.142.0"
-
+  
+  # 生产环境
   HUGO_ENV = "production"
   
+  # Node 版本
   NODE_VERSION = "16"
   
   # 确保使用正确的主题路径

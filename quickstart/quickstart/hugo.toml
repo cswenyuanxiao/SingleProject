@@ -1,0 +1,9 @@
+baseURL = 'https://cswenyuanxiao.netlify.app/'
+languageCode = 'en-us'
+title = 'Home'
+theme = 'hugo-bootstrap-theme'
+# 使用项目根目录的 themes 文件夹
+themesDir = "../themes"
+
+# Disable URL canonicalization to allow relative paths to work properly
+canonifyURLs = false 

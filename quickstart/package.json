@@ -4,13 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "hugo && cp -r public/* quickstart/public/"
+    "deploy": "hugo && cp -r public/* quickstart/public/",
+    "build": "hugo --minify",
+    "start": "hugo server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@filipecarneiro/hugo-bootstrap-theme": "^1.0.49"
-  }
+  "description": ""
 }
