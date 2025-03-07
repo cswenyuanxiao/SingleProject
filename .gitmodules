@@ -1,0 +1,3 @@
+[submodule "quickstart/themes/hugo-bootstrap-theme"]
+	path = quickstart/themes/hugo-bootstrap-theme
+	url = https://github.com/filipecarneiro/hugo-bootstrap-theme.git
