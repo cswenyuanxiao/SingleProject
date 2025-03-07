@@ -1,0 +1,15 @@
+[build]
+  # 默认发布目录
+  publish = "quickstart/public"
+  # Hugo 构建命令
+  command = "cd quickstart && npm install hugo-installer -g && hugo"
+
+[build.environment]
+  # 设置 Hugo 版本
+  HUGO_VERSION = "0.142.0"
+  # 启用 Hugo 扩展版
+  HUGO_ENV = "production"
+
+[[plugins]]
+  # 安装 Hugo 插件
+  package = "@netlify/plugin-hugo" 

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "hugo",
+    "postinstall": "npm install hugo-installer -g"
+  },
+  "devDependencies": {
+    "hugo-installer": "^4.0.1"
+  }
+} 

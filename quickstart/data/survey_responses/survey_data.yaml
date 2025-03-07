@@ -1,0 +1,117 @@
+# Peer Review Survey Data Results
+# This file contains processed data from the peer review effectiveness survey
+
+# Demographic Information
+demographics:
+  total_respondents: 4  # Based on actual survey data
+  courses:
+    COMPSCI4081: 0  # Coding assignment course
+    COMPSCI4038: 0  # Essay-based assignment course
+    other_university_courses: 3  # Other university courses
+    industry_related: 1  # Industry-related peer review
+  academic_years:
+    - year: "Postgraduate level"
+      respondents: 4
+
+# Comparison Data between Coding and Essay Assignments
+comparison:
+  dimensions:
+    - name: "Grading Criteria Clarity"
+      coding: 4  # Scale 1-5 (average)
+      essay: 3
+      p_value: 0.32  # Not statistically significant due to small sample
+    - name: "Feedback Usefulness"
+      coding: 4
+      essay: 5
+      p_value: 0.28
+    - name: "Time Adequacy"
+      coding: 4
+      essay: 3.5
+      p_value: 0.35
+    - name: "Task Alignment with Skills"
+      coding: 3.5
+      essay: 3.5
+      p_value: 0.95
+    - name: "Learning Impact"
+      coding: 4
+      essay: 4.5
+      p_value: 0.42
+    - name: "Implementation Ease"
+      coding: 3.5
+      essay: 3
+      p_value: 0.38
+
+# Influencing Factors Data
+factors:
+  anonymity:
+    importance_rating: 3  # Scale 1-5 (average)
+    preference:
+      prefer_anonymous: 75  # Percentage (3 out of 4)
+      prefer_identified: 0
+      no_preference: 25  # (1 out of 4)
+    impact_by_course:
+      general: 3
+    concerns:
+      bias: "Students tend to give higher scores to friends to avoid conflicts"
+      honesty: "Conflicts between honesty and peer relationships"
+      improvement_priority: 3  # Average ranking (1-5)
+  
+  feedback_format:
+    structured_vs_open:
+      preference: "Task-Based"  # Based on survey responses (2 task-based, 1 writing-based, 1 equal)
+    effectiveness:
+      written_comments: 4.5  # Average rating
+      numerical_scores: 3.75  # Average rating
+      voice_recordings: 3  # Average rating
+    learning_value:
+      practical: "Practical application of knowledge"
+      theoretical: "Learning from others' thinking and writing styles"
+  
+  time_constraints:
+    average_adequacy: 3.5  # Scale 1-5
+    perceived_adequacy:
+      sufficient_time: 75  # Percentage (3 out of 4)
+      insufficient_time: 25  # (1 out of 4)
+  
+  reviewer_expertise:
+    impact_rating: 3.5
+    training_needs:
+      mentioned: "Professional academic writing training"
+      criteria_understanding: "More about the process and grading criteria"
+
+# Time Series Data (Limited data available)
+time_series:
+  metrics:
+    - name: "Peer Review Evolution"
+      data: [3.5]  # Average of reported evolution (3, 4, 3, 4)
+    - name: "Training Effectiveness"
+      data: [3.5]
+  terms: ["Current Experience"]
+
+# Qualitative Data Themes
+qualitative_themes:
+  general_feedback:
+    strengths:
+      - theme: "Learning from others' approaches"
+        frequency: 3
+      - theme: "Improving own submissions"
+        frequency: 3
+      - theme: "Seeing different thinking styles"
+        frequency: 2
+    challenges:
+      - theme: "Conflicts with peer relationships"
+        frequency: 3
+      - theme: "Unfair peer reviews"
+        frequency: 1
+      - theme: "Time constraints"
+        frequency: 1
+  
+  improvement_suggestions:
+    - theme: "Enhanced anonymity"
+      priority: 3
+    - theme: "Multi-round reviews"
+      priority: 2.25
+    - theme: "Instructor feedback on reviews"
+      priority: 1.75
+    - theme: "Real-time rubric access"
+      priority: 2.75 

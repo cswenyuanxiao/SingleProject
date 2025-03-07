@@ -1,33 +1,33 @@
 📂 quickstart/
 │── 📂 content/
-│   ├── 📂 comparison/          # 数据对比页面
-│   │   ├── _index.md           # Comparison 主页
-│   │   ├── coding-vs-essay.md  # 代码 vs 论文评审数据
-│   │   ├── ai-vs-human.md      # AI 评分 vs 人工评分
+│   ├── 📂 comparison/          # 
+│   │   ├── _index.md           # 
+│   │   ├── coding-vs-essay.md  # 
+│   │   ├── ai-vs-human.md      # 
 │   │
-│   ├── 📂 suggestions/         # 改进建议页面
-│   │   ├── _index.md           # Suggestions 主页
-│   │   ├── improve-feedback.md # 提高评审质量的建议
-│   │   ├── ai-enhancement.md   # AI 评分如何改进
+│   ├── 📂 suggestions/         # 
+│   │   ├── _index.md           # 
+│   │   ├── improve-feedback.md # 
+│   │   ├── ai-enhancement.md   # 
 │   │
-│   ├── _index.md               # 主页
+│   ├── _index.md               # 
 │
 │── 📂 layouts/
-│   ├── 📂 comparison/          # Comparison 页面布局
-│   │   ├── list.html           # Comparison 主页
-│   │   ├── single.html         # 具体数据页面
+│   ├── 📂 comparison/          # 
+│   │   ├── list.html           # 
+│   │   ├── single.html         # 
 │   │
-│   ├── 📂 suggestions/         # Suggestions 页面布局
-│   │   ├── list.html           # Suggestions 主页
-│   │   ├── single.html         # 具体改进建议
+│   ├── 📂 suggestions/         # 
+│   │   ├── list.html           # 
+│   │   ├── single.html         # 
 │   │
 │   ├── 📂 partials/
-│   │   ├── navbar.html         # 导航栏
-│   │   ├── footer.html         # 页脚
-│   │   ├── head.html           # HTML 头部
+│   │   ├── navbar.html         # 
+│   │   ├── footer.html         # 
+│   │   ├── head.html           # 
 │   │
 │── 📂 static/
 │   ├── 📂 css/
-│   ├── 📂 images/              # 数据可视化图片
+│   ├── 📂 images/              # 
 │
-│── hugo.toml                   # 站点配置
+│── hugo.toml                   # 

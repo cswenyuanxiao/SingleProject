@@ -1,0 +1,5 @@
+{{ $h := .Get "height" | default "400px" }}
+{{ $w := .Get "width" | default "100%" }}
+<div style="position: relative; height: {{ $h }}; width: {{ $w }}; margin-bottom: 30px;">
+  {{ .Inner }}
+</div> 
