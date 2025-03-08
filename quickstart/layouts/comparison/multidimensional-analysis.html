@@ -121,13 +121,13 @@
                 </div>
                 
                 <!-- Download option -->
-                <div class="card border-0 shadow-sm text-center">
+                <div class="card mb-4 border-0 shadow-sm">
                     <div class="card-body">
                         <h5 class="mb-3 text-primary">Download Analysis</h5>
-                        <button class="btn btn-outline-primary me-2" id="downloadPDF">
+                        <button class="btn btn-outline-primary me-2" id="pdfReportButton">
                             <i class="fas fa-file-pdf me-1"></i> PDF Report
                         </button>
-                        <button class="btn btn-outline-success" id="downloadCSV">
+                        <button class="btn btn-outline-success" id="rawDataButton">
                             <i class="fas fa-file-csv me-1"></i> Raw Data
                         </button>
                     </div>
@@ -145,7 +145,73 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- Charts initialization script -->
+<script src="/js/csv-download.js"></script>
+
+<!-- Data injection for dynamic downloads -->
 <script>
+// This makes the survey data available to JavaScript
+window.surveyData = {
+  demographics: {
+    total_respondents: 4,
+    courses: {
+      other_university_courses: 3,
+      industry_related: 1
+    },
+    academic_years: [
+      { year: "Postgraduate level", respondents: 4 }
+    ]
+  },
+  comparison: {
+    dimensions: [
+      { name: "Grading Criteria Clarity", coding: 4, essay: 3, p_value: 0.32 },
+      { name: "Feedback Usefulness", coding: 4, essay: 5, p_value: 0.28 },
+      { name: "Time Adequacy", coding: 4, essay: 3.5, p_value: 0.35 },
+      { name: "Task Alignment with Skills", coding: 3.5, essay: 3.5, p_value: 0.95 },
+      { name: "Learning Impact", coding: 4, essay: 4.5, p_value: 0.42 },
+      { name: "Implementation Ease", coding: 3.5, essay: 3, p_value: 0.38 }
+    ]
+  },
+  factors: {
+    anonymity: {
+      importance_rating: 3,
+      preference: {
+        prefer_anonymous: 75,
+        prefer_identified: 0,
+        no_preference: 25
+      },
+      concerns: {
+        bias: "Students tend to give higher scores to friends to avoid conflicts",
+        honesty: "Conflicts between honesty and peer relationships"
+      }
+    },
+    feedback_format: {
+      effectiveness: {
+        written_comments: 4.5,
+        numerical_scores: 3.75,
+        voice_recordings: 3
+      }
+    },
+    time_constraints: {
+      average_adequacy: 3.5,
+      perceived_adequacy: {
+        sufficient_time: 75,
+        insufficient_time: 25
+      }
+    }
+  },
+  qualitative_themes: {
+    improvement_suggestions: [
+      { theme: "Enhanced anonymity", priority: 3 },
+      { theme: "Multi-round reviews", priority: 2.25 },
+      { theme: "Instructor feedback on reviews", priority: 1.75 },
+      { theme: "Real-time rubric access", priority: 2.75 }
+    ]
+  }
+};
+
+// Store chart instances for data extraction
+window.charts = {};
+
 document.addEventListener('DOMContentLoaded', function() {
     // Radar Chart
     const radarCtx = document.getElementById('radarChart').getContext('2d');
@@ -182,7 +248,8 @@ document.addEventListener('DOMContentLoaded', function() {
         ]
     };
     
-    new Chart(radarCtx, {
+    // Store chart instance for data extraction
+    window.charts.radarChart = new Chart(radarCtx, {
         type: 'radar',
         data: radarData,
         options: {
@@ -316,15 +383,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-    });
-    
-    // Download buttons (placeholders)
-    document.getElementById('downloadPDF').addEventListener('click', function() {
-        alert('PDF download functionality would be implemented here');
-    });
-    
-    document.getElementById('downloadCSV').addEventListener('click', function() {
-        alert('CSV download functionality would be implemented here');
     });
 });
 </script>

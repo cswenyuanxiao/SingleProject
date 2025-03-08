@@ -12,7 +12,7 @@
   
   NODE_VERSION = "16"
   
-  # 确保使用正确的主题路径
+  # 
   HUGO_THEMESDIR = "themes"
   
 

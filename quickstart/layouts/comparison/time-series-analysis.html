@@ -150,13 +150,13 @@
                 </div>
                 
                 <!-- Download option -->
-                <div class="card border-0 shadow-sm text-center" style="background-color: #EFEBE9;">
+                <div class="card mb-4" style="background-color: #F5F5DC; border: none;">
                     <div class="card-body">
                         <h5 class="mb-3" style="color: #795548;">Download Data</h5>
-                        <button class="btn me-2" style="background-color: #F5F5DC; color: #795548; border-color: #D7CCC8;" id="downloadPDF">
-                            <i class="fas fa-file-pdf me-1"></i> Report
+                        <button class="btn me-2" style="background-color: #F5F5DC; color: #795548; border-color: #D7CCC8;" id="pdfReportButton">
+                            <i class="fas fa-file-pdf me-1"></i> PDF Report
                         </button>
-                        <button class="btn" style="background-color: #F5F5DC; color: #8D6E63; border-color: #D7CCC8;" id="downloadCSV">
+                        <button class="btn" style="background-color: #F5F5DC; color: #8D6E63; border-color: #D7CCC8;" id="rawDataButton">
                             <i class="fas fa-file-csv me-1"></i> Raw Data
                         </button>
                     </div>
@@ -174,7 +174,61 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- Charts initialization script -->
+<script src="/js/csv-download.js"></script>
+
+<!-- Data injection for dynamic downloads -->
 <script>
+// Global data for time series analysis
+window.timeSeriesData = {
+    metrics: [
+        { 
+            name: "Reviewer Consistency", 
+            data: [42, 53, 61, 67, 74, 78]
+        },
+        { 
+            name: "Feedback Quality", 
+            data: [55, 58, 65, 69, 75, 79]
+        },
+        { 
+            name: "Student Satisfaction", 
+            data: [61, 58, 68, 72, 77, 82]
+        },
+        { 
+            name: "Instructor Alignment", 
+            data: [48, 54, 62, 68, 71, 76]
+        },
+        { 
+            name: "Completion Rate", 
+            data: [76, 72, 84, 79, 88, 84]
+        }
+    ],
+    terms: ['Fall 2021', 'Spring 2022', 'Fall 2022', 'Spring 2023', 'Fall 2023', 'Spring 2024'],
+    interventions: [
+        { term: "Spring 2022", name: "Reviewer training", impact: "+11%" },
+        { term: "Fall 2022", name: "Structured rubrics", impact: "+14%" },
+        { term: "Spring 2023", name: "Double-blind process", impact: "+10%" },
+        { term: "Fall 2023", name: "AI-assisted feedback", impact: "+8%" }
+    ]
+};
+
+// Also share the general survey data
+window.surveyData = {
+    demographics: {
+        total_respondents: 4,
+        courses: {
+            other_university_courses: 3,
+            industry_related: 1
+        },
+        academic_years: [
+            { year: "Postgraduate level", respondents: 4 }
+        ]
+    },
+    // ...other data shared in similar format to the multi-analysis page
+};
+
+// Store chart instances
+window.charts = {};
+
 document.addEventListener('DOMContentLoaded', function() {
     // Common data
     const terms = ['Fall 2021', 'Spring 2022', 'Fall 2022', 'Spring 2023', 'Fall 2023', 'Spring 2024'];
@@ -261,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ]
     };
     
-    new Chart(lineCtx, {
+    window.charts.lineChart = new Chart(lineCtx, {
         type: 'line',
         data: lineData,
         options: {
@@ -564,15 +618,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-    });
-    
-    // Download buttons (placeholders)
-    document.getElementById('downloadPDF').addEventListener('click', function() {
-        alert('PDF download functionality would be implemented here');
-    });
-    
-    document.getElementById('downloadCSV').addEventListener('click', function() {
-        alert('CSV download functionality would be implemented here');
     });
 });
 </script>

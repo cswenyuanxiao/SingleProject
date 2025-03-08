@@ -227,14 +227,14 @@
                 </div>
                 
                 <!-- Download option -->
-                <div class="card border-0 shadow-sm text-center" style="background-color: #EFEBE9;">
+                <div class="card mb-4" style="background-color: #EFEBE9; border: none;">
                     <div class="card-body">
                         <h5 class="mb-3" style="color: #795548;">Download Data</h5>
-                        <button class="btn btn-outline-primary me-2" style="background-color: #F5F5DC; color: #795548; border-color: #D7CCC8;" id="downloadReport">
+                        <button class="btn me-2" style="background-color: #F5F5DC; color: #795548; border-color: #D7CCC8;" id="pdfReportButton">
                             <i class="fas fa-file-pdf me-1"></i> Full Report
                         </button>
-                        <button class="btn btn-outline-success" style="background-color: #F5F5DC; color: #8D6E63; border-color: #D7CCC8;" id="downloadData">
-                            <i class="fas fa-table me-1"></i> Comparison Data
+                        <button class="btn" style="background-color: #F5F5DC; color: #8D6E63; border-color: #D7CCC8;" id="rawDataButton">
+                            <i class="fas fa-file-csv me-1"></i> Raw Data
                         </button>
                     </div>
                 </div>
@@ -251,7 +251,57 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- Charts initialization script -->
+<script src="/js/csv-download.js"></script>
+
+<!-- Data injection for dynamic downloads -->
 <script>
+// Global data for method comparison analysis
+window.methodComparisonData = {
+    methods: ["Open-Ended", "Rubric-Based", "Double-Blind", "AI-Assisted", "Minimal"],
+    dimensions: ["Feedback Quality", "Time Efficiency", "Reviewer Consistency", "Student Satisfaction", "Implementation Cost", "Learning Outcomes"],
+    ratings: [
+        // Open-Ended
+        [6.2, 6.5, 5.8, 6.8, 8.2, 7.4],
+        // Rubric-Based
+        [8.7, 6.8, 8.9, 7.6, 7.3, 8.5],
+        // Double-Blind
+        [7.2, 6.2, 7.9, 8.2, 6.5, 8.3],
+        // AI-Assisted
+        [8.4, 9.2, 7.5, 7.9, 6.2, 7.8],
+        // Minimal
+        [5.2, 7.8, 6.4, 6.4, 9.1, 6.7]
+    ],
+    contextPerformance: {
+        contexts: ["Undergraduate Courses", "Graduate Seminars", "Professional Development"],
+        data: [
+            // Undergraduate
+            [7.4, 8.9, 7.6, 8.2, 7.8],
+            // Graduate
+            [6.8, 8.7, 8.5, 8.7, 6.2],
+            // Professional 
+            [5.9, 8.2, 8.1, 9.1, 7.4]
+        ]
+    }
+};
+
+// Also share the general survey data
+window.surveyData = {
+    demographics: {
+        total_respondents: 4,
+        courses: {
+            other_university_courses: 3,
+            industry_related: 1
+        },
+        academic_years: [
+            { year: "Postgraduate level", respondents: 4 }
+        ]
+    },
+    // ...other data shared in similar format to the multi-analysis page
+};
+
+// Store chart instances
+window.charts = {};
+
 document.addEventListener('DOMContentLoaded', function() {
     // Common data
     const methodLabels = ['Open-Ended', 'Rubric-Based', 'Double-Blind', 'AI-Assisted', 'Minimal'];
@@ -337,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ]
     };
     
-    new Chart(radarCtx, {
+    window.charts.radarChart = new Chart(radarCtx, {
         type: 'radar',
         data: radarData,
         options: {
@@ -523,15 +573,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-    });
-    
-    // Download buttons (placeholders)
-    document.getElementById('downloadReport').addEventListener('click', function() {
-        alert('Full report download functionality would be implemented here');
-    });
-    
-    document.getElementById('downloadData').addEventListener('click', function() {
-        alert('Comparison data download functionality would be implemented here');
     });
 });
 </script>
