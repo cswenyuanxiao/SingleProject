@@ -65,7 +65,7 @@ The Peer Review Resource Center is a comprehensive website designed to provide h
 
 The site is automatically deployed to GitHub Pages through GitHub Actions whenever changes are pushed to the main branch.
 
-You can access the live version at: [peer-review2715237.netlify.app](peer-review2715237.netlify.app)
+You can access the live version at: [https://peer-review2715237.netlify.app/](https://peer-review2715237.netlify.app/)
 
 ## Project Structure
 
