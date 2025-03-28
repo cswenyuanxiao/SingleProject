@@ -47,7 +47,7 @@ The Peer Review Resource Center is a comprehensive website designed to provide h
    hugo server -D
    ```
 
-4. Visit `http://localhost:1313/SingleProject/` in your browser
+4. Visit `http://localhost:1313/` in your browser
 
 ### Troubleshooting Common Issues
 
@@ -65,7 +65,7 @@ The Peer Review Resource Center is a comprehensive website designed to provide h
 
 The site is automatically deployed to GitHub Pages through GitHub Actions whenever changes are pushed to the main branch.
 
-You can access the live version at: https://cswenyuanxiao.github.io/SingleProject/
+You can access the live version at: peer-review2715237.netlify.app
 
 ## Project Structure
 
